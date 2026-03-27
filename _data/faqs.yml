@@ -1,0 +1,14 @@
+internship:
+  - question: "Who is the internship primarily intended for?"
+    answer: "The program is aimed primarily at Bangladeshi undergraduate and masters students, though the exact yearly call may clarify whether exceptional applicants from other stages are also eligible."
+  - question: "Are the projects always research projects?"
+    answer: "Not necessarily. Depending on the mentor and the student background, a project may be structured as guided reading, technical preparation, computational work, or more research-oriented activity."
+  - question: "How often do students meet mentors?"
+    answer: "A typical structure is weekly or biweekly meetings, but final expectations should be updated in the public call once the yearly program is confirmed."
+schools:
+  - question: "Are school timetables final?"
+    answer: "Not always. Where the yearly planner is still being finalized, the timetable section is labelled as draft or provisional."
+  - question: "Where will lecture notes and recordings appear?"
+    answer: "Use each school page's resources section for notes, slides, problem sheets, videos, and related links."
+  - question: "Who should update a school page?"
+    answer: "Future organizers can update the Markdown file for that school directly, without changing layout templates."

@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="Physics For Bangladesh logo">
+      <span class="brand-copy">
+        <strong>{{ site.data.settings.site_title }}</strong>
+        <small>{{ site.data.settings.tagline }}</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="site-menu" class="site-nav" aria-label="Primary navigation">
+      <ul>
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

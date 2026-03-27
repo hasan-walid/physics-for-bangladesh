@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign intro = page.intro %}
+<section class="page-intro">
+  <div class="container narrow">
+    {% include section-header.html eyebrow=intro.eyebrow title=intro.title text=intro.text align="left" %}
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container reading">
+    {{ content }}
+  </div>
+</section>

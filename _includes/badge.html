@@ -1,0 +1,2 @@
+{% assign normalized = include.status | downcase %}
+<span class="badge badge-{{ normalized | replace: ' ', '-' }}">{{ include.status }}</span>

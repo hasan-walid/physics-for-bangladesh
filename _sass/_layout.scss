@@ -1,0 +1,182 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(16px);
+  background: rgba(7, 16, 29, 0.82);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 84px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: $text;
+}
+
+.brand img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-copy strong {
+  font-size: 0.98rem;
+}
+
+.brand-copy small {
+  color: $muted;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav a {
+  color: $text;
+  font-weight: 500;
+}
+
+.site-nav a[aria-current="page"] {
+  color: $accent-strong;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.32rem;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $border;
+  border-radius: 50%;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  color: $text;
+}
+
+.nav-toggle span {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.hero,
+.school-hero {
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  min-height: 74vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner,
+.school-hero-inner {
+  display: grid;
+  gap: 2rem;
+  align-items: end;
+  padding: 7rem 0 5rem;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.page-intro {
+  padding: 5rem 0 2rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+  gap: 2rem;
+}
+
+.school-layout {
+  align-items: start;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.site-footer {
+  padding: 4rem 0;
+  background: rgba(0, 0, 0, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li + li {
+  margin-top: 0.55rem;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 1rem;
+    background: rgba(7, 16, 29, 0.98);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .site-nav.is-open {
+    display: block;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .two-column,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-inner,
+  .school-hero-inner {
+    padding: 5rem 0 4rem;
+  }
+}

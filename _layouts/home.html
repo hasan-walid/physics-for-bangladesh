@@ -1,0 +1,86 @@
+---
+layout: default
+---
+{% assign home = site.data.homepage %}
+{% assign featured_organizers = site.organizers | where_exp: "item", "home.featured_organizer_slugs contains item.slug" | sort: "order" %}
+{% assign featured_schools = site.schools | where_exp: "item", "home.featured_school_slugs contains item.slug" %}
+
+{% include hero.html
+  title=home.hero.title
+  text=home.hero.subtitle
+  image=site.data.settings.hero_image
+  buttons=home.hero.buttons
+%}
+
+<section class="section">
+  <div class="container">
+    {% include section-header.html eyebrow="Mission" title=home.mission.title text=home.mission.text %}
+  </div>
+</section>
+
+<section class="section section-panel">
+  <div class="container">
+    {% include section-header.html eyebrow="Current Activities" title="Programs and opportunities" text="The homepage cards below are managed from data files so current items can be swapped quickly as the yearly cycle evolves." %}
+    <div class="card-grid card-grid-4">
+      {% for activity in home.activities %}
+        <article class="panel-card activity-card">
+          <p class="eyebrow">{{ activity.category }}</p>
+          <h3>{{ activity.title }}</h3>
+          <p>{{ activity.summary }}</p>
+          {% if activity.url %}
+            <a class="text-link" href="{{ activity.url | relative_url }}">{{ activity.link_label | default: "Learn more" }}</a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% include section-header.html eyebrow="Organizers" title="Lead organizers and support team" text="Organizer cards are driven from the collection so names, roles, affiliations, and short biographies can be updated without touching layout files." %}
+    <div class="card-grid card-grid-3">
+      {% for slug in home.featured_organizer_slugs %}
+        {% assign organizer = site.organizers | where: "slug", slug | first %}
+        {% if organizer %}
+          {% include card-organizer.html item=organizer %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-panel">
+  <div class="container">
+    {% include section-header.html eyebrow="Featured Schools" title="Recent and flagship programs" text="This section highlights a mix of archival and current programs, including the schools seeded from the current planner." %}
+    <div class="card-grid card-grid-2">
+      {% for slug in home.featured_school_slugs %}
+        {% assign school = site.schools | where: "slug", slug | first %}
+        {% if school %}
+          {% include card-school.html item=school %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% include section-header.html eyebrow="Announcements" title="Important notices and resources" text="Announcements are collection items and can be activated or removed without editing templates." %}
+    {% include announcement-list.html %}
+  </div>
+</section>
+
+<section class="section section-panel">
+  <div class="container">
+    {% include section-header.html eyebrow="Quick Links" title="Useful destinations" text="Replace placeholder destinations in the data file once official links are available." %}
+    <div class="quick-links">
+      {% for link in home.quick_links %}
+        <a class="quick-link" href="{{ link.url }}">
+          <span>{{ link.label }}</span>
+          <small>{{ link.note }}</small>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<div class="timeline">
+  {% for item in include.items %}
+    <article class="timeline-item">
+      <div class="timeline-marker" aria-hidden="true"></div>
+      <div class="timeline-content">
+        <p class="meta">{{ item.label }}</p>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</div>

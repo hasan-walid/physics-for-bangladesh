@@ -1,0 +1,48 @@
+title: "ICTP PWF Physics For Bangladesh"
+description: "An academic initiative connecting Bangladeshi students with advanced physics education, seminars, and mentorship."
+url: ""
+baseurl: ""
+lang: "en"
+timezone: "Asia/Dhaka"
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  style: compressed
+
+collections:
+  schools:
+    output: true
+    permalink: /schools/:name/
+  organizers:
+    output: false
+  mentors:
+    output: false
+  announcements:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: /assets/images/hero-bg.jpg
+  - scope:
+      path: ""
+      type: schools
+    values:
+      layout: school
+  - scope:
+      path: ""
+      type: organizers
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: mentors
+    values:
+      layout: page
+
+exclude:
+  - README.md

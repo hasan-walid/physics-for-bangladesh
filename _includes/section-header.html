@@ -1,0 +1,11 @@
+<div class="section-header {% if include.align == 'left' %}section-header-left{% endif %}">
+  {% if include.eyebrow %}
+    <p class="eyebrow">{{ include.eyebrow }}</p>
+  {% endif %}
+  {% if include.title %}
+    <h2>{{ include.title }}</h2>
+  {% endif %}
+  {% if include.text %}
+    <p class="section-text">{{ include.text }}</p>
+  {% endif %}
+</div>

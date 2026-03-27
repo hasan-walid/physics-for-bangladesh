@@ -1,0 +1,6 @@
+- label: YouTube
+  url: "https://www.youtube.com/"
+- label: Facebook
+  url: "#"
+- label: Email
+  url: "mailto:physicsforbangladesh@example.org"

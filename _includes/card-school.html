@@ -1,0 +1,11 @@
+{% assign item = include.item %}
+<article class="panel-card school-card">
+  <div class="card-topline">
+    <p class="meta">{{ item.year }}{% if item.category %} • {{ item.category }}{% endif %}</p>
+    {% include badge.html status=item.status %}
+  </div>
+  <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+  <p class="small-text">{{ item.date_label | default: "Dates to be announced" }}</p>
+  <p>{{ item.summary }}</p>
+  <a class="text-link" href="{{ item.url | relative_url }}">View details</a>
+</article>

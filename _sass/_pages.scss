@@ -1,0 +1,34 @@
+.school-hero-copy .lead {
+  max-width: 720px;
+}
+
+.school-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.stack-grid {
+  display: grid;
+}
+
+.outline-group + .outline-group {
+  margin-top: 2rem;
+}
+
+.page-content h2,
+.reading h2 {
+  margin-top: 2.5rem;
+}
+
+.reading blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(74, 144, 255, 0.45);
+  color: $muted;
+}
+
+.reading hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 2rem 0;
+}

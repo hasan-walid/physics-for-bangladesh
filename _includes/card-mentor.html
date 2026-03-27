@@ -1,0 +1,18 @@
+{% assign item = include.item %}
+<article class="panel-card mentor-card">
+  <div class="card-topline">
+    <p class="meta">{{ item.field }}</p>
+    {% if item.active %}
+      {% include badge.html status="Draft" %}
+    {% endif %}
+  </div>
+  <h3>{{ item.project_title }}</h3>
+  <p class="small-text">{{ item.name }} • {{ item.affiliation }}</p>
+  <p>{{ item.project_summary }}</p>
+  <p><strong>Suggested background:</strong> {{ item.prerequisites }}</p>
+  {% if item.application_link %}
+    <a class="text-link" href="{{ item.application_link }}">Project contact / apply</a>
+  {% elsif item.email %}
+    <a class="text-link" href="mailto:{{ item.email }}">{{ item.email }}</a>
+  {% endif %}
+</article>
