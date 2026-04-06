@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% assign home = site.data.homepage %}
+{% include hero.html
+  title=home.hero.title
+  text=home.hero.subtitle
+  tagline=home.hero.tagline
+  image=site.data.settings.hero_image
+%}
+
+<section class="section">
+  <div class="container narrow">
+    {% include section-header.html eyebrow="Overview" title=home.overview.title text=home.overview.text align="left" %}
+    {% include section-header.html eyebrow="Year 3" title="Upcoming Events" text="The current yearly cycle is organized around schools, an internship program, and related activities." align="left" %}
+    <div class="table-wrap">
+      <table class="data-table event-table">
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Program</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in home.upcoming_events %}
+            <tr>
+              <td>{{ item.period }}</td>
+              <td>
+                {% if item.url %}
+                  <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% else %}
+                  {{ item.title }}
+                {% endif %}
+              </td>
+              <td>{{ item.note }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

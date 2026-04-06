@@ -1,0 +1,10 @@
+{% assign item = include.item %}
+<article class="panel-card organizer-card">
+  {% if item.image %}
+    <img class="avatar" src="{{ item.image | relative_url }}" alt="" loading="lazy">
+  {% endif %}
+  <h3>{{ item.name }}</h3>
+  <p class="meta">{{ item.role }}</p>
+  <p class="small-text">{{ item.affiliation }}</p>
+  <p>{{ item.bio }}</p>
+</article>

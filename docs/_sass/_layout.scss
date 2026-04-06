@@ -1,0 +1,196 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(244, 244, 240, 0.94);
+  border-bottom: 1px solid $border;
+}
+
+.nav-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 72px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: $text;
+}
+
+.brand img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.brand-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav a {
+  color: $text;
+  font-weight: 500;
+}
+
+.site-nav a[aria-current="page"] {
+  color: $accent-strong;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.32rem;
+  width: 42px;
+  height: 42px;
+  border: 1px solid $border;
+  border-radius: 8px;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  color: $text;
+}
+
+.nav-toggle span {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.hero,
+.school-hero {
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  min-height: 56vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border;
+}
+
+.hero-inner,
+.school-hero-inner {
+  display: block;
+  padding: 5.5rem 0 3.5rem;
+}
+
+.hero-copy {
+  max-width: 900px;
+}
+
+.page-intro {
+  padding: 4rem 0 2rem;
+}
+
+.school-page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(220px, 0.7fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.school-main {
+  min-width: 0;
+}
+
+.school-sidebar-outline {
+  position: relative;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+  gap: 2rem;
+}
+
+.school-layout {
+  align-items: start;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.site-footer {
+  padding: 3.5rem 0;
+  background: $panel-soft;
+  border-top: 1px solid $border;
+}
+
+.footer-brand {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-logo {
+  max-width: 260px;
+}
+
+.footer-ictp {
+  align-content: start;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 1rem;
+    background: $bg;
+    border-bottom: 1px solid $border;
+  }
+
+  .site-nav.is-open {
+    display: block;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .two-column,
+  .school-page-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-inner,
+  .school-hero-inner {
+    padding: 4.5rem 0 3rem;
+  }
+
+  .brand-title {
+    font-size: 0.92rem;
+  }
+}

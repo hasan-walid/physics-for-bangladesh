@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% assign intro = page.intro %}
+{% assign all_years = site.schools | map: "year" | uniq | sort | reverse %}
+<section class="page-intro">
+  <div class="container narrow">
+    {% include section-header.html eyebrow=intro.eyebrow title=intro.title text=intro.text align="left" %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% for year in all_years %}
+      {% assign items = site.schools | where: "year", year | sort: "title" %}
+      <section class="year-group" data-year-group="{{ year }}">
+        <div class="year-header">
+          <h2>{{ year }}</h2>
+          <button class="year-chip" type="button" data-filter-group="year" data-filter-value="{{ year }}">Show only {{ year }}</button>
+        </div>
+        <div class="card-grid card-grid-2">
+          {% for school in items %}
+            <div class="archive-item" data-year="{{ school.year }}" data-status="{{ school.status | downcase }}">
+              {% include card-school.html item=school %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  background: $bg;
+  color: $text;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: $accent-strong;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: $accent;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.75rem;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: $accent;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  width: calc(100% - 2rem);
+  max-width: $container;
+  margin: 0 auto;
+}
+
+.narrow {
+  width: calc(100% - 2rem);
+  max-width: 860px;
+}
+
+.reading {
+  max-width: 72ch;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-panel {
+  background: transparent;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+.eyebrow,
+.meta {
+  margin-bottom: 0.85rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $muted;
+}
+
+.lead,
+.section-text {
+  color: $muted;
+  font-size: 1.02rem;
+}
+
+.note,
+.small-text {
+  color: $muted;
+  font-size: 0.95rem;
+}

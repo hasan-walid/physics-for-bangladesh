@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Abstract background pattern</title>
-  <desc id="desc">Subtle academic background grid placeholder.</desc>
-  <rect width="1600" height="900" fill="#08111f"/>
-  <g stroke="#183050" stroke-opacity="0.6">
-    <path d="M0 120h1600M0 240h1600M0 360h1600M0 480h1600M0 600h1600M0 720h1600M0 840h1600"/>
-    <path d="M120 0v900M240 0v900M360 0v900M480 0v900M600 0v900M720 0v900M840 0v900M960 0v900M1080 0v900M1200 0v900M1320 0v900M1440 0v900"/>
-  </g>
-</svg>

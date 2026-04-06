@@ -1,0 +1,191 @@
+---
+layout: default
+---
+<section class="school-hero" style="background-image: linear-gradient(180deg, rgba(244, 244, 240, 0.94), rgba(244, 244, 240, 0.90)), url('{{ page.hero_image | default: site.data.settings.hero_image | relative_url }}');">
+  <div class="container school-hero-inner">
+    <div class="school-hero-copy">
+      <a class="back-link" href="{{ '/schools/' | relative_url }}">Back to Schools</a>
+      <h1>{{ page.title }}</h1>
+      <div class="button-row">
+        {% unless page.course_started %}
+          {% if page.registration_link %}
+            <a class="button button-primary" href="{{ page.registration_link }}">Register</a>
+          {% endif %}
+        {% endunless %}
+        {% if page.course_started and page.session_resources %}
+          <a class="button button-secondary" href="#course-resources">Course Resources</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container school-page-grid">
+    <div class="school-main">
+      {% if page.registration_deadline or page.date_label or page.timing_summary %}
+        <div class="course-meta">
+          {% if page.date_label %}
+            <p><strong>Schedule:</strong> {{ page.date_label }}</p>
+          {% endif %}
+          {% if page.registration_deadline and page.course_started != true %}
+            <p><strong>Registration deadline:</strong> {{ page.registration_deadline }}</p>
+          {% endif %}
+          {% if page.timing_summary %}
+            <p><strong>Timing:</strong> {{ page.timing_summary }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.instructors %}
+        <section id="instructor">
+          <h2>Instructor</h2>
+          {% for instructor in page.instructors %}
+            <article class="instructor-card">
+              <h3>{{ instructor.name }}</h3>
+              <p class="instructor-affiliation">{{ instructor.affiliation }}</p>
+            </article>
+          {% endfor %}
+        </section>
+      {% endif %}
+
+      {% if page.abstract %}
+        <section id="abstract">
+          <h2>Abstract</h2>
+          <p>{{ page.abstract }}</p>
+        </section>
+      {% endif %}
+
+      {{ content }}
+
+      {% if page.timing %}
+        <section id="outline">
+          <h2>Course Outline and Schedule</h2>
+          <div class="outline-groups">
+            {% for group in page.course_outline %}
+              <section class="outline-group">
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Session</th>
+                        <th>Topic</th>
+                        <th>Date and time (BST)</th>
+                        <th>Lecturer / Speaker</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for topic in group.topics %}
+                        {% assign session_key = topic.session | default: "" %}
+                        {% assign schedule_item = page.timing | where: "session", session_key | first %}
+                        <tr>
+                          <td>{{ topic.session }}</td>
+                          <td>{{ topic.title }}</td>
+                          <td>{{ schedule_item.datetime | default: "To be announced" }}</td>
+                          <td>{{ schedule_item.speaker | default: topic.speaker | default: "To be announced" }}</td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            {% endfor %}
+          </div>
+        </section>
+      {% elsif page.course_outline %}
+        <h2>Course Outline</h2>
+        <div class="outline-groups">
+          {% for group in page.course_outline %}
+            <section class="outline-group">
+              <h3>{{ group.title }}</h3>
+              <ol>
+                {% for topic in group.topics %}
+                  <li>{{ topic.title | default: topic }}</li>
+                {% endfor %}
+              </ol>
+            </section>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.poster_image or page.poster_download_url %}
+        <h2 id="poster">Poster</h2>
+        <div class="poster-card">
+          {% if page.poster_image %}
+            <div class="poster-preview-wrap">
+              <a class="poster-preview" href="{{ page.poster_image | relative_url }}">
+                <img src="{{ page.poster_image | relative_url }}" alt="Course poster for {{ page.title }}">
+              </a>
+            </div>
+          {% endif %}
+          {% if page.poster_download_url %}
+            <div class="poster-actions">
+              <a class="button button-secondary" href="{{ page.poster_download_url }}">Download Poster</a>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.course_started and page.session_resources %}
+        <h2 id="course-resources">Course Resources</h2>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Session</th>
+                <th>Topic</th>
+                <th>Notes</th>
+                <th>Recording</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in page.session_resources %}
+                <tr>
+                  <td>{{ item.session }}</td>
+                  <td>{{ item.topic }}</td>
+                  <td>
+                    {% if item.notes_url %}
+                      <a href="{{ item.notes_url }}">Notes</a>
+                    {% else %}
+                      <span class="small-text">Pending</span>
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if item.recording_url %}
+                      <a href="{{ item.recording_url }}">Recording</a>
+                    {% else %}
+                      <span class="small-text">Pending</span>
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endif %}
+    </div>
+
+    <aside class="school-sidebar-outline">
+      <div class="page-outline">
+        <p class="eyebrow">On This Page</p>
+        <ul class="outline-nav">
+          {% if page.instructors %}
+            <li><a href="#instructor">Instructor</a></li>
+          {% endif %}
+          {% if page.abstract %}
+            <li><a href="#abstract">Abstract</a></li>
+          {% endif %}
+          {% if page.timing or page.course_outline %}
+            <li><a href="#outline">Course Outline and Schedule</a></li>
+          {% endif %}
+          {% if page.poster_image or page.poster_download_url %}
+            <li><a href="#poster">Poster</a></li>
+          {% endif %}
+          {% if page.course_started and page.session_resources %}
+            <li><a href="#course-resources">Course Resources</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

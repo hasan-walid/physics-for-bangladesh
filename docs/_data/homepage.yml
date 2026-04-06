@@ -1,0 +1,23 @@
+hero:
+  title: "Physics Without Frontiers Bangladesh"
+  subtitle: "ICTP PWF Physics For Bangladesh is an outreach program of Physics Without Frontiers at ICTP. It brings structured physics courses, seminars, and mentorship opportunities to students in Bangladesh."
+  tagline: "In collaboration with the International Centre for Theoretical Physics, Prof. Nabil Iqbal and Ahmed Rakin Kamal launched this program to offer courses in physics and help develop the physics scene in Bangladesh. We run schools, seminars, and mentorship programs in Bangladesh."
+
+overview:
+  title: "A year-round program in advanced physics training"
+  text: "The program is designed around a yearly cycle of schools, seminars, and mentorship. It aims to widen access to mathematically rigorous and research-oriented physics training, while helping build a stronger physics community in Bangladesh."
+
+upcoming_events:
+  - period: "May - July 2026"
+    title: "School on Mathematics for Physics 1: Operators on Hilbert Spaces"
+    url: /schools/math-physics-1/
+    note: "Registration ongoing"
+  - period: "July - October 2026"
+    title: "Online Summer Internship Program"
+    note: "Details to be announced"
+  - period: "August - September 2026"
+    title: "School on Quantum Mechanics and Quantum Information"
+    note: "Details to be announced"
+  - period: "November 2026 - January 2027"
+    title: "School on Math for Physics 2: Basics of Differential Geometry"
+    note: "Details to be announced"

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
-  <title id="title">Placeholder profile image</title>
-  <desc id="desc">Abstract profile placeholder for organizer or instructor cards.</desc>
-  <rect width="240" height="240" rx="40" fill="#101b2e"/>
-  <circle cx="120" cy="88" r="42" fill="#4a90ff" opacity="0.85"/>
-  <path d="M58 196c9-31 35-50 62-50s53 19 62 50" fill="#7db2ff" opacity="0.72"/>
-</svg>

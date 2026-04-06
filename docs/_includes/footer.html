@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand footer-ictp">
+      <img class="footer-logo" src="{{ '/assets/images/ictp-pwf-logo.png' | relative_url }}" alt="ICTP Physics Without Frontiers logo">
+      <ul class="link-list">
+        <li><a href="https://www.ictp.it/">International Centre for Theoretical Physics</a></li>
+        <li><a href="https://www.ictp.it/home/physics-without-frontiers">Physics Without Frontiers</a></li>
+      </ul>
+      <p class="small-text">{{ site.data.settings.footer_note }}</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul class="link-list">
+        <li><a href="mailto:{{ site.data.contact.general_email }}">{{ site.data.contact.general_email }}</a></li>
+        {% for item in site.data.socials %}
+          <li>
+            <a class="social-link" href="{{ item.url }}">
+              {% include social-icon.html label=item.label %}
+              <span>{{ item.label }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>
