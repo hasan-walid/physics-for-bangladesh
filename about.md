@@ -34,4 +34,4 @@ The program runs a yearly cycle of schools, seminars, and mentorship activities.
 
 ## Contact
 
-For public inquiries, applications, and collaborations, email [physicsforbangladesh@gmail.com](mailto:physicsforbangladesh@gmail.com).
+For public inquiries, applications, and collaborations, email [physicsforbangladesh@outlook.com](mailto:physicsforbangladesh@outlook.com).
