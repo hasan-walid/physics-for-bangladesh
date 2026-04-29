@@ -52,12 +52,13 @@ layout: default
       {% if page.teaching_assistants %}
         <section id="teaching-assistants">
           <h2>Teaching Assistants</h2>
-          {% for assistant in page.teaching_assistants %}
-            <article class="instructor-card">
-              <h3>{{ assistant.name }}</h3>
-              <p class="instructor-affiliation">{{ assistant.affiliation }}</p>
-            </article>
-          {% endfor %}
+          <article class="instructor-card">
+            <ul class="people-list compact-people-list">
+              {% for assistant in page.teaching_assistants %}
+                <li><strong>{{ assistant.name }}</strong><span>{{ assistant.affiliation }}</span></li>
+              {% endfor %}
+            </ul>
+          </article>
         </section>
       {% endif %}
 

@@ -379,6 +379,20 @@
   text-align: right;
 }
 
+.compact-people-list {
+  border-top: 0;
+}
+
+.compact-people-list li {
+  padding: 0;
+}
+
+.compact-people-list li + li {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid $border;
+}
+
 .social-link-list {
   display: grid;
   gap: 0.8rem;
