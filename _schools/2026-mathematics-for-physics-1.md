@@ -21,6 +21,11 @@ abstract: "This short course is intended to offer a gentle introduction to unbou
 instructors:
   - name: "Onirban Islam"
     affiliation: "Postdoctoral Researcher, Institute for Mathematics, University of Potsdam, Germany"
+teaching_assistants:
+  - name: "Tanmoy Kumar Sarkar"
+    affiliation: "Student, BRAC University"
+  - name: "Atonu Roy Chowdhury"
+    affiliation: "Adjunct Lecturer, Department of Computer Science and Engineering, BRAC University"
 course_outline:
   - title: "Operators on Hilbert Spaces"
     topics:

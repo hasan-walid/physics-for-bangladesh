@@ -49,6 +49,18 @@ layout: default
         </section>
       {% endif %}
 
+      {% if page.teaching_assistants %}
+        <section id="teaching-assistants">
+          <h2>Teaching Assistants</h2>
+          {% for assistant in page.teaching_assistants %}
+            <article class="instructor-card">
+              <h3>{{ assistant.name }}</h3>
+              <p class="instructor-affiliation">{{ assistant.affiliation }}</p>
+            </article>
+          {% endfor %}
+        </section>
+      {% endif %}
+
       {% if page.abstract %}
         <section id="abstract">
           <h2>Abstract</h2>
@@ -171,6 +183,9 @@ layout: default
         <ul class="outline-nav">
           {% if page.instructors %}
             <li><a href="#instructor">Instructor</a></li>
+          {% endif %}
+          {% if page.teaching_assistants %}
+            <li><a href="#teaching-assistants">Teaching Assistants</a></li>
           {% endif %}
           {% if page.abstract %}
             <li><a href="#abstract">Abstract</a></li>
