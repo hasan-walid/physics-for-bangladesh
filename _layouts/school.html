@@ -86,17 +86,38 @@ layout: default
                         <th>Topic</th>
                         <th>Date and time (BST)</th>
                         <th>Lecturer / Speaker</th>
+                        {% if page.session_resources %}
+                          <th>Lecture Notes</th>
+                          <th>Recording</th>
+                        {% endif %}
                       </tr>
                     </thead>
                     <tbody>
                       {% for topic in group.topics %}
                         {% assign session_key = topic.session | default: "" %}
                         {% assign schedule_item = page.timing | where: "session", session_key | first %}
+                        {% assign resource_item = page.session_resources | where: "session", session_key | first %}
                         <tr>
                           <td>{{ topic.session }}</td>
                           <td>{{ topic.title }}</td>
                           <td>{{ schedule_item.datetime | default: "To be announced" }}</td>
                           <td>{{ schedule_item.speaker | default: topic.speaker | default: "To be announced" }}</td>
+                          {% if page.session_resources %}
+                            <td>
+                              {% if resource_item and resource_item.notes_url %}
+                                <a href="{{ resource_item.notes_url }}">Lecture Notes</a>
+                              {% else %}
+                                <span class="small-text">Pending</span>
+                              {% endif %}
+                            </td>
+                            <td>
+                              {% if resource_item and resource_item.recording_url %}
+                                <a href="{{ resource_item.recording_url }}">Recording</a>
+                              {% else %}
+                                <span class="small-text">Pending</span>
+                              {% endif %}
+                            </td>
+                          {% endif %}
                         </tr>
                       {% endfor %}
                     </tbody>
@@ -140,43 +161,6 @@ layout: default
         </div>
       {% endif %}
 
-      {% if page.course_started and page.session_resources %}
-        <h2 id="course-resources">Course Resources</h2>
-        <div class="table-wrap">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Session</th>
-                <th>Topic</th>
-                <th>Notes</th>
-                <th>Recording</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for item in page.session_resources %}
-                <tr>
-                  <td>{{ item.session }}</td>
-                  <td>{{ item.topic }}</td>
-                  <td>
-                    {% if item.notes_url %}
-                      <a href="{{ item.notes_url }}">Notes</a>
-                    {% else %}
-                      <span class="small-text">Pending</span>
-                    {% endif %}
-                  </td>
-                  <td>
-                    {% if item.recording_url %}
-                      <a href="{{ item.recording_url }}">Recording</a>
-                    {% else %}
-                      <span class="small-text">Pending</span>
-                    {% endif %}
-                  </td>
-                </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
-      {% endif %}
     </div>
 
     <aside class="school-sidebar-outline">
@@ -197,9 +181,6 @@ layout: default
           {% endif %}
           {% if page.poster_image or page.poster_download_url %}
             <li><a href="#poster">Poster</a></li>
-          {% endif %}
-          {% if page.course_started and page.session_resources %}
-            <li><a href="#course-resources">Course Resources</a></li>
           {% endif %}
         </ul>
       </div>
