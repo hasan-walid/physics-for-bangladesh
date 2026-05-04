@@ -153,6 +153,11 @@
   background: rgba(47, 122, 83, 0.08);
 }
 
+.badge-ongoing {
+  color: $accent-strong;
+  background: rgba(15, 91, 211, 0.08);
+}
+
 .badge-draft {
   color: $warning;
   background: rgba(140, 107, 32, 0.08);

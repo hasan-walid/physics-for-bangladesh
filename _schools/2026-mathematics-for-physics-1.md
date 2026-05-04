@@ -8,7 +8,7 @@ start_date: 2026-05-01
 end_date: 2026-07-05
 registration_deadline: "25 April 2026"
 registration_link: "https://forms.gle/oEUPrYTtrneoLqXB9"
-status: "Upcoming"
+status: "Ongoing"
 audience: "Students preparing for advanced quantum mechanics and mathematical physics"
 prerequisites: "A rudimentary background in linear algebra"
 hero_image: /assets/images/hero-bg.jpg
@@ -16,7 +16,7 @@ poster_image: /assets/images/math-physics-1-poster.jpg
 poster_download_url: /assets/images/math-physics-1-poster.jpg
 timing_summary: "Lectures and homework sessions run in Bangladesh Standard Time, typically 7:00 PM - 9:00 PM."
 featured: true
-course_started: false
+course_started: true
 abstract: "This short course is intended to offer a gentle introduction to unbounded operators on Hilbert spaces pertinent to quantum mechanics. Our starting point will be to point out the differences between operators on finite-dimensional and infinite-dimensional Hilbert spaces, and to understand why the latter is essential for formulating quantum mechanics in a mathematically rigorous fashion. We will begin with the basics of unbounded operators on Hilbert spaces and rigged Hilbert spaces in order to explain the standard Heisenberg matrix mechanics and Dirac bra-ket formalisms. Our aim is to comprehend the quantum mechanical simple harmonic oscillator and its spectrum from an operator-theoretic viewpoint. A rudimentary background in linear algebra is assumed, although a few topics will be recalled in due course in order to motivate the analysis in an infinite-dimensional Hilbert space setting."
 instructors:
   - name: "Onirban Islam"
@@ -130,6 +130,19 @@ timing:
   - datetime: "05/07/2026, 7:00 PM - 9:00 PM"
     session: "L16"
     speaker: "Onirban Islam"
+session_resources:
+  - session: "L01"
+    topic: "Finite-dimensional Hilbert Spaces"
+    notes_url: "/assets/resources/math-physics-1/math-physics-1-lecture-notes-01-03.pdf"
+    recording_url: "https://youtu.be/fUGSFSLzKb0"
+  - session: "L02"
+    topic: "Infinite-dimensional Hilbert Spaces"
+    notes_url: "/assets/resources/math-physics-1/math-physics-1-lecture-notes-01-03.pdf"
+    recording_url: "https://youtu.be/NWZiI-DpCtk"
+  - session: "L03"
+    topic: "Bounded Operators"
+    notes_url: "/assets/resources/math-physics-1/math-physics-1-lecture-notes-01-03.pdf"
+    recording_url: "https://youtu.be/5zV2tnIGKmY"
 permalink: /schools/math-physics-1/
 ---
 This school introduces operator-theoretic methods that are central to a rigorous treatment of quantum mechanics. It is designed for students who want a careful bridge from finite-dimensional linear algebra to the infinite-dimensional Hilbert space setting used in modern quantum theory.
