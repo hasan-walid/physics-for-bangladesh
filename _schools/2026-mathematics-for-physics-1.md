@@ -36,7 +36,7 @@ course_outline:
       - session: "L03"
         title: "Bounded Operators"
       - session: "T01"
-        title: "Tutorial Session"
+        title: "Real Numbers: Density, Completeness, and Equivalent Characterizations"
       - session: "L04"
         title: "Unbounded Operators"
       - session: "L05"
@@ -81,7 +81,7 @@ timing:
     speaker: "Onirban Islam"
   - datetime: "09/05/2026, 7:00 PM - 9:00 PM"
     session: "T01"
-    speaker: ""
+    speaker: "Tanmoy Kumar Sarkar"
   - datetime: "15/05/2026, 7:00 PM - 9:00 PM"
     session: "L04"
     speaker: "Onirban Islam"
@@ -143,6 +143,9 @@ session_resources:
     topic: "Bounded Operators"
     notes_url: "/assets/resources/math-physics-1/math-physics-1-lecture-notes-01-03.pdf"
     recording_url: "https://youtu.be/5zV2tnIGKmY"
+  - session: "T01"
+    topic: "Real Numbers: Density, Completeness, and Equivalent Characterizations"
+    recording_url: "https://youtu.be/WZjsaMWTQ5Q"
 permalink: /schools/math-physics-1/
 ---
 This school introduces operator-theoretic methods that are central to a rigorous treatment of quantum mechanics. It is designed for students who want a careful bridge from finite-dimensional linear algebra to the infinite-dimensional Hilbert space setting used in modern quantum theory.
