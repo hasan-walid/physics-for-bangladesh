@@ -145,6 +145,7 @@ session_resources:
     recording_url: "https://youtu.be/5zV2tnIGKmY"
   - session: "T01"
     topic: "Real Numbers: Density, Completeness, and Equivalent Characterizations"
+    notes_url: "/assets/resources/math-physics-1/math-physics-1-tutorial-notes-01.pdf"
     recording_url: "https://youtu.be/WZjsaMWTQ5Q"
 permalink: /schools/math-physics-1/
 ---
