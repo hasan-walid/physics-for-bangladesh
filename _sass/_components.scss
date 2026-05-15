@@ -359,6 +359,17 @@
   color: $muted;
 }
 
+@media (max-width: 900px) {
+  .page-outline {
+    position: static;
+    padding: 0;
+    border-left: 0;
+    border-bottom: 1px solid $border;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .people-section {
   display: grid;
   gap: 2rem;

@@ -296,7 +296,7 @@ intern_projects:
   - name: "Walid Hasan"
     affiliation: "BRAC University"
     mentor: "Ratul Mahanta and Ahmed Rakin Kamal"
-    project_title: "Internship Report"
+    project_title: "The anatomy of non-vacuum Kasner branes"
     report_url: "/assets/resources/internships/2025/reports/walid-hasan-report.pdf"
   - name: "Kazi Fahim Reza Arko"
     affiliation: "BRAC University"

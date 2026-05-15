@@ -74,7 +74,19 @@ layout: default
                           <p class="instructor-affiliation">{{ mentor.affiliation }}</p>
                         {% endif %}
                         {% if mentor.profile_url %}
-                          <p class="mentor-meta-link"><strong>Profile:</strong> <a href="{{ mentor.profile_url }}">View profile</a></p>
+                          <p class="mentor-meta-link"><strong>Profile:</strong>
+                            <a href="{{ mentor.profile_url }}">
+                              {% if mentor.profile_url contains "inspirehep.net" %}
+                                INSPIRE
+                              {% elsif mentor.profile_url contains "scholar.google.com" %}
+                                Google Scholar
+                              {% elsif mentor.profile_url contains "orcid.org" %}
+                                ORCID
+                              {% else %}
+                                Website
+                              {% endif %}
+                            </a>
+                          </p>
                         {% endif %}
                       </div>
                     </div>
