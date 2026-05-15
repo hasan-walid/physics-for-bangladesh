@@ -1,0 +1,159 @@
+---
+layout: default
+---
+<section class="school-hero" style="background-image: linear-gradient(180deg, rgba(244, 244, 240, 0.94), rgba(244, 244, 240, 0.90)), url('{{ page.hero_image | default: site.data.settings.hero_image | relative_url }}');">
+  <div class="container school-hero-inner">
+    <div class="school-hero-copy">
+      <a class="back-link" href="{{ '/internships/' | relative_url }}">Back to Internships</a>
+      <h1>{{ page.title }}</h1>
+      <div class="button-row">
+        {% if page.application_link and page.status != "Archived" %}
+          <a class="button button-primary" href="{{ page.application_link }}">Apply</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container school-page-grid">
+    <div class="school-main">
+      <div class="course-meta">
+        {% if page.date_label %}
+          <p><strong>Internship period:</strong> {{ page.date_label }}</p>
+        {% endif %}
+        {% if page.application_period %}
+          <p><strong>Application period:</strong> {{ page.application_period }}</p>
+        {% endif %}
+        {% if page.delivery_mode %}
+          <p><strong>Format:</strong> {{ page.delivery_mode }}</p>
+        {% endif %}
+        {% if page.status %}
+          <p><strong>Status:</strong> {{ page.status }}</p>
+        {% endif %}
+      </div>
+
+      <section id="overview">
+        <h2>Overview</h2>
+        {% if page.summary %}
+          <p>{{ page.summary }}</p>
+        {% endif %}
+        {% if page.eligibility %}
+          <p><strong>Eligibility:</strong> {{ page.eligibility }}</p>
+        {% endif %}
+        {% if page.application_requirements %}
+          <p><strong>Application requirements:</strong> {{ page.application_requirements }}</p>
+        {% endif %}
+      </section>
+
+      <section id="key-information">
+        <h2>Key Information</h2>
+        <div class="instructor-card">
+          {% if page.application_link %}
+            <p><strong>Application form:</strong> <a href="{{ page.application_link }}">{{ page.application_link }}</a></p>
+          {% endif %}
+          {% if page.reference_letter_link %}
+            <p><strong>Reference letter form:</strong> <a href="{{ page.reference_letter_link }}">{{ page.reference_letter_link }}</a></p>
+          {% endif %}
+          {% if page.archive_note %}
+            <p>{{ page.archive_note }}</p>
+          {% endif %}
+        </div>
+      </section>
+
+      {% if page.subject_areas %}
+        <section id="mentors">
+          <h2>Mentors and Topics</h2>
+          {% for area in page.subject_areas %}
+            <section class="mentor-area">
+              <h3>{{ area.title }}</h3>
+              <div class="mentor-stack">
+                {% for mentor in area.mentors %}
+                  <article class="instructor-card">
+                    <div class="mentor-head">
+                      <div>
+                        <h4>{{ mentor.name }}</h4>
+                        {% if mentor.affiliation %}
+                          <p class="instructor-affiliation">{{ mentor.affiliation }}</p>
+                        {% endif %}
+                      </div>
+                      {% if mentor.profile_url %}
+                        <a class="text-link" href="{{ mentor.profile_url }}">Profile</a>
+                      {% endif %}
+                    </div>
+                    {% for topic in mentor.topics %}
+                      <div class="mentor-topic">
+                        <p><strong>Topic {{ forloop.index }}:</strong> {{ topic.title }}</p>
+                        {% if topic.synopsis %}
+                          <p>{{ topic.synopsis }}</p>
+                        {% endif %}
+                        {% if topic.prerequisites %}
+                          <p><strong>Prerequisites:</strong> {{ topic.prerequisites }}</p>
+                        {% endif %}
+                        {% if topic.reference %}
+                          <p><strong>Reference:</strong> {{ topic.reference }}</p>
+                        {% endif %}
+                      </div>
+                    {% endfor %}
+                  </article>
+                {% endfor %}
+              </div>
+            </section>
+          {% endfor %}
+        </section>
+      {% endif %}
+
+      {% if page.intern_projects %}
+        <section id="projects">
+          <h2>Intern Projects</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Intern</th>
+                  <th>Affiliation</th>
+                  <th>Mentor</th>
+                  <th>Project Title</th>
+                  <th>Report</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for project in page.intern_projects %}
+                  <tr>
+                    <td>{{ project.name }}</td>
+                    <td>{{ project.affiliation }}</td>
+                    <td>{{ project.mentor }}</td>
+                    <td>{{ project.project_title }}</td>
+                    <td>
+                      {% if project.report_url %}
+                        <a href="{{ project.report_url }}">Report</a>
+                      {% else %}
+                        <span class="small-text">Pending</span>
+                      {% endif %}
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      {% endif %}
+    </div>
+
+    <aside class="school-sidebar-outline">
+      <div class="page-outline">
+        <p class="eyebrow">On This Page</p>
+        <ul class="outline-nav">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#key-information">Key Information</a></li>
+          {% if page.subject_areas %}
+            <li><a href="#mentors">Mentors and Topics</a></li>
+          {% endif %}
+          {% if page.intern_projects %}
+            <li><a href="#projects">Intern Projects</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

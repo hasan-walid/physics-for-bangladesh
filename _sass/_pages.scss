@@ -32,3 +32,34 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin: 2rem 0;
 }
+
+.mentor-area + .mentor-area {
+  margin-top: 2rem;
+}
+
+.mentor-area h3 {
+  margin-bottom: 1rem;
+}
+
+.mentor-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.mentor-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 0.9rem;
+}
+
+.mentor-head h4 {
+  margin-bottom: 0.25rem;
+}
+
+.mentor-topic + .mentor-topic {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid $border;
+}

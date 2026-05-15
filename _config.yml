@@ -15,6 +15,9 @@ collections:
   schools:
     output: true
     permalink: /schools/:name/
+  internships:
+    output: true
+    permalink: /internships/:name/
   organizers:
     output: false
 
@@ -29,6 +32,11 @@ defaults:
       type: schools
     values:
       layout: school
+  - scope:
+      path: ""
+      type: internships
+    values:
+      layout: internship
   - scope:
       path: ""
       type: organizers

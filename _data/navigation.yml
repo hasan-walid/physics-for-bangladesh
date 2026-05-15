@@ -2,5 +2,7 @@
   url: /
 - label: Schools
   url: /schools/
+- label: Internships
+  url: /internships/
 - label: About Us
   url: /about/
