@@ -331,7 +331,7 @@ intern_projects:
   - name: "Tahmeed Hossain"
     affiliation: "University of Dhaka"
     mentor: "Samanta Saha"
-    project_title: "Internship Report"
+    project_title: "A Formalism to calculate In-Out Correlators in de Sitter Space and it’s Application"
     report_url: "/assets/resources/internships/2025/reports/tahmeed-hossain-report.pdf"
   - name: "Shahriar Pollob"
     affiliation: "SUST"
