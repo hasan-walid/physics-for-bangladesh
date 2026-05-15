@@ -55,9 +55,6 @@ layout: default
           {% if page.reference_letter_link %}
             <p><strong>Reference letter form:</strong> <a href="{{ page.reference_letter_link }}">{{ page.reference_letter_link }}</a></p>
           {% endif %}
-          {% if page.archive_note %}
-            <p>{{ page.archive_note }}</p>
-          {% endif %}
         </div>
       </section>
 
@@ -76,10 +73,10 @@ layout: default
                         {% if mentor.affiliation %}
                           <p class="instructor-affiliation">{{ mentor.affiliation }}</p>
                         {% endif %}
+                        {% if mentor.profile_url %}
+                          <p class="mentor-meta-link"><strong>Profile:</strong> <a href="{{ mentor.profile_url }}">View profile</a></p>
+                        {% endif %}
                       </div>
-                      {% if mentor.profile_url %}
-                        <a class="text-link" href="{{ mentor.profile_url }}">Profile</a>
-                      {% endif %}
                     </div>
                     {% for topic in mentor.topics %}
                       <div class="mentor-topic">
@@ -118,7 +115,8 @@ layout: default
                 </tr>
               </thead>
               <tbody>
-                {% for project in page.intern_projects %}
+                {% assign sorted_projects = page.intern_projects | sort: "name" %}
+                {% for project in sorted_projects %}
                   <tr>
                     <td>{{ project.name }}</td>
                     <td>{{ project.affiliation }}</td>
