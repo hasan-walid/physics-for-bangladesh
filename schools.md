@@ -6,5 +6,5 @@ permalink: /schools/
 intro:
   eyebrow: "Schools Archive"
   title: "Schools and Preparatory Programs"
-  text: "Here you can find the schools offered through Physics For Bangladesh. We will continue to archive course materials and other public resources from previous schools as they are prepared for release."
+  text: "Archive of schools and preparatory programs offered through Physics For Bangladesh."
 ---

@@ -42,7 +42,7 @@ course_outline:
       - session: "L05"
         title: "Self-adjoint Operators"
       - session: "T02"
-        title: "Tutorial Session"
+        title: "Separable Hilbert Spaces, L^2 Space, Norm of Operator"
       - session: "L06"
         title: "Spectrum"
       - session: "L07"
@@ -147,6 +147,10 @@ session_resources:
     topic: "Real Numbers: Density, Completeness, and Equivalent Characterizations"
     notes_url: "/assets/resources/math-physics-1/math-physics-1-tutorial-notes-01.pdf"
     recording_url: "https://youtu.be/WZjsaMWTQ5Q"
+  - session: "T02"
+    topic: "Separable Hilbert Spaces, L^2 Space, Norm of Operator"
+    notes_url: "/assets/resources/math-physics-1/math-physics-1-tutorial-notes-02.pdf"
+    recording_url: "https://youtu.be/AxKaYY0Fn4Y"
 permalink: /schools/math-physics-1/
 ---
 This school introduces operator-theoretic methods that are central to a rigorous treatment of quantum mechanics. It is designed for students who want a careful bridge from finite-dimensional linear algebra to the infinite-dimensional Hilbert space setting used in modern quantum theory.
