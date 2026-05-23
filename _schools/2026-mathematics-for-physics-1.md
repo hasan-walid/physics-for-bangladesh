@@ -90,7 +90,7 @@ timing:
     speaker: "Onirban Islam"
   - datetime: "23/05/2026, 7:00 PM - 9:00 PM"
     session: "T02"
-    speaker: ""
+    speaker: "Atonu Roy Chowdhury"
   - datetime: "30/05/2026, 7:00 PM - 9:00 PM"
     session: "L06"
     speaker: "Onirban Islam"
