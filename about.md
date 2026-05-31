@@ -23,15 +23,10 @@ The program runs a yearly cycle of schools, seminars, and mentorship activities.
 {% endfor %}
 </ul>
 
-## Student Volunteers
-
-<ul class="people-list">
-{% assign support_team = site.organizers | where: "featured", false | sort: "order" %}
-{% for organizer in support_team %}
-  <li><strong>{{ organizer.name }}</strong><span>{{ organizer.affiliation }}</span></li>
-{% endfor %}
-</ul>
-
 ## Contact
 
-For public inquiries, applications, and collaborations, email [physicsforbangladesh@outlook.com](mailto:physicsforbangladesh@outlook.com).
+For collaborations and suggestions, please contact:
+
+Ahmed Rakin Kamal: [ahmedrakinkamaltunok@gmail.com](mailto:ahmedrakinkamaltunok@gmail.com)
+
+Prof. Nabil Iqbal: [nabil.iqbal@durham.ac.uk](mailto:nabil.iqbal@durham.ac.uk)
