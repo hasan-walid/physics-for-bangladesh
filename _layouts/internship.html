@@ -20,10 +20,10 @@ layout: default
     <div class="school-main">
       <div class="course-meta">
         {% if page.date_label %}
-          <p><strong>Internship period:</strong> {{ page.date_label }}</p>
+          <p><strong>{{ page.date_label_label | default: "Internship period" }}:</strong> {{ page.date_label }}</p>
         {% endif %}
         {% if page.application_period %}
-          <p><strong>Application period:</strong> {{ page.application_period }}</p>
+          <p><strong>{{ page.application_period_label | default: "Application period" }}:</strong> {{ page.application_period }}</p>
         {% endif %}
         {% if page.delivery_mode %}
           <p><strong>Format:</strong> {{ page.delivery_mode }}</p>
@@ -50,13 +50,15 @@ layout: default
         <h2>Key Information</h2>
         <div class="instructor-card">
           {% if page.application_link %}
-            <p><strong>Application form:</strong> <a href="{{ page.application_link }}">{{ page.application_link }}</a></p>
+            <p><strong>{{ page.application_link_label | default: "Application form" }}:</strong> <a href="{{ page.application_link }}">{{ page.application_link }}</a></p>
           {% endif %}
           {% if page.reference_letter_link %}
-            <p><strong>Reference letter form:</strong> <a href="{{ page.reference_letter_link }}">{{ page.reference_letter_link }}</a></p>
+            <p><strong>{{ page.reference_letter_link_label | default: "Reference letter form" }}:</strong> <a href="{{ page.reference_letter_link }}">{{ page.reference_letter_link }}</a></p>
           {% endif %}
         </div>
       </section>
+
+      {{ content }}
 
       {% if page.subject_areas %}
         <section id="mentors">
