@@ -1,0 +1,121 @@
+---
+layout: default
+---
+<section class="school-hero" style="background-image: linear-gradient(180deg, rgba(244, 244, 240, 0.94), rgba(244, 244, 240, 0.90)), url('{{ page.hero_image | default: site.data.settings.hero_image | relative_url }}');">
+  <div class="container school-hero-inner">
+    <div class="school-hero-copy">
+      <a class="back-link" href="{{ '/internships/' | relative_url }}">Back to Internships</a>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container school-page-grid">
+    <div class="school-main">
+      <div class="course-meta">
+        {% if page.date_label %}
+          <p><strong>{{ page.date_label_label | default: "Internship period" }}:</strong> {{ page.date_label }}</p>
+        {% endif %}
+        {% if page.application_period %}
+          <p><strong>{{ page.application_period_label | default: "Application period" }}:</strong> {{ page.application_period }}</p>
+        {% endif %}
+        {% if page.delivery_mode %}
+          <p><strong>Format:</strong> {{ page.delivery_mode }}</p>
+        {% endif %}
+        {% if page.status %}
+          <p><strong>Status:</strong> {{ page.status }}</p>
+        {% endif %}
+      </div>
+
+      <section id="overview">
+        <h2>Overview</h2>
+        {% if page.summary %}
+          <p>{{ page.summary }}</p>
+        {% endif %}
+        {% if page.eligibility %}
+          <p><strong>Current focus:</strong> {{ page.eligibility }}</p>
+        {% endif %}
+        {% if page.application_requirements %}
+          <p><strong>Applications:</strong> {{ page.application_requirements }}</p>
+        {% endif %}
+      </section>
+
+      {{ content }}
+
+      {% if page.tracks %}
+        <section id="tracks">
+          <h2>Tracks</h2>
+          {% for track in page.tracks %}
+            <section class="mentor-area">
+              <h3>{{ track.title }}</h3>
+              {% if track.summary %}
+                <p>{{ track.summary }}</p>
+              {% endif %}
+              {% if track.mentors %}
+                <div class="mentor-stack">
+                  {% for mentor in track.mentors %}
+                    <article class="instructor-card">
+                      <div class="mentor-head">
+                        <div>
+                          <h4>{{ mentor.name }}</h4>
+                          {% if mentor.affiliation %}
+                            <p class="instructor-affiliation">{{ mentor.affiliation }}</p>
+                          {% endif %}
+                          {% if mentor.profile_url %}
+                            <p class="mentor-meta-link"><strong>Profile:</strong>
+                              <a href="{{ mentor.profile_url }}">
+                                {% if mentor.profile_url contains "inspirehep.net" %}
+                                  INSPIRE
+                                {% elsif mentor.profile_url contains "scholar.google.com" %}
+                                  Google Scholar
+                                {% elsif mentor.profile_url contains "orcid.org" %}
+                                  ORCID
+                                {% else %}
+                                  Website
+                                {% endif %}
+                              </a>
+                            </p>
+                          {% endif %}
+                        </div>
+                      </div>
+                      {% if mentor.prerequisites %}
+                        <p><strong>Prerequisites:</strong> {{ mentor.prerequisites }}</p>
+                      {% endif %}
+                      {% if mentor.projects %}
+                        {% for project in mentor.projects %}
+                          <div class="mentor-topic">
+                            <p><strong>Project {{ forloop.index }}:</strong> {{ project.title }}</p>
+                            {% if project.description %}
+                              <p>{{ project.description }}</p>
+                            {% endif %}
+                            {% if project.prerequisites %}
+                              <p><strong>Prerequisites:</strong> {{ project.prerequisites }}</p>
+                            {% endif %}
+                          </div>
+                        {% endfor %}
+                      {% endif %}
+                    </article>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </section>
+          {% endfor %}
+        </section>
+      {% endif %}
+    </div>
+
+    <aside class="school-sidebar-outline">
+      <div class="page-outline">
+        <p class="eyebrow">On This Page</p>
+        <ul class="outline-nav">
+          <li><a href="#overview">Overview</a></li>
+          {% if page.tracks %}
+            <li><a href="#tracks">Tracks</a></li>
+          {% endif %}
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

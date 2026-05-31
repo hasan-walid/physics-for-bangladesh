@@ -1,6 +1,7 @@
 ---
-title: "ICTP PWF: Physics for Bangladesh Online Summer Internship 2026"
-slug: "2026-online-summer-internship"
+layout: internship_call
+title: "ICTP PWF Bangladesh Internship"
+slug: "2026-pwf-bangladesh-internship"
 year: 2026
 category: "Internship"
 status: "Upcoming"
@@ -8,15 +9,13 @@ date_label_label: "Internship period"
 date_label: "July 2026 onward"
 application_period_label: "Mentor call deadline"
 application_period: "Before 7 June 2026"
-reference_letter_link_label: "Read about last year's internship"
-reference_letter_link: "https://physicsforbangladesh.org/internships/2025-online-summer-internship/"
 delivery_mode: "Online supervision"
 hero_image: /assets/images/hero-bg.jpg
 featured: true
 summary: "The 2026 online summer internship will continue the Physics For Bangladesh effort to connect students and young researchers in Bangladesh with active researchers through guided small research projects."
 eligibility: "We are currently inviting mentors, from advanced PhD students and postdoctoral researchers to faculty members, who would be interested in supervising motivated students over the summer."
 application_requirements: "Student applications will open after the mentor list is finalized."
-permalink: /internships/2026-online-summer-internship/
+permalink: /internships/2026-pwf-bangladesh-internship/
 ---
 ## Call for Mentors
 
@@ -24,7 +23,9 @@ At ICTP PWF Physics for Bangladesh, one of our main goals is to build bridges be
 
 As part of this effort, we are continuing our mentorship and internship programme this July. We are currently looking for mentors, from advanced PhD students and postdoctoral researchers to faculty members, who would be interested in supervising motivated students on small research projects over the summer.
 
-## Contact
+You can read more about last year's internship here: [2025 internship archive](https://physicsforbangladesh.org/internships/2025-online-summer-internship/).
+
+## Contact {#contact}
 
 If you are an active researcher and would like to be part of this initiative, please contact the organizers before 7 June 2026:
 
