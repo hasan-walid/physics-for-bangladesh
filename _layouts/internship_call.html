@@ -33,9 +33,6 @@ layout: default
         {% if page.summary %}
           <p>{{ page.summary }}</p>
         {% endif %}
-        {% if page.eligibility %}
-          <p><strong>Current focus:</strong> {{ page.eligibility }}</p>
-        {% endif %}
         {% if page.application_requirements %}
           <p><strong>Applications:</strong> {{ page.application_requirements }}</p>
         {% endif %}
@@ -110,6 +107,7 @@ layout: default
         <p class="eyebrow">On This Page</p>
         <ul class="outline-nav">
           <li><a href="#overview">Overview</a></li>
+          <li><a href="#call-for-mentors">Call for Mentors</a></li>
           {% if page.tracks %}
             <li><a href="#tracks">Tracks</a></li>
           {% endif %}
