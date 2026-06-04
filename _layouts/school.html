@@ -87,7 +87,6 @@ layout: default
                         <th>Date and time (BST)</th>
                         <th>Lecturer / Speaker</th>
                         {% if page.session_resources %}
-                          <th>Lecture Notes</th>
                           <th>Recording</th>
                         {% endif %}
                       </tr>
@@ -103,13 +102,6 @@ layout: default
                           <td>{{ schedule_item.datetime | default: "To be announced" }}</td>
                           <td>{{ schedule_item.speaker | default: topic.speaker | default: "To be announced" }}</td>
                           {% if page.session_resources %}
-                            <td>
-                              {% if resource_item and resource_item.notes_url %}
-                                <a href="{{ resource_item.notes_url }}">Lecture Notes</a>
-                              {% else %}
-                                <span class="small-text">Pending</span>
-                              {% endif %}
-                            </td>
                             <td>
                               {% if resource_item and resource_item.recording_url %}
                                 <a href="{{ resource_item.recording_url }}">Recording</a>
@@ -141,6 +133,22 @@ layout: default
             </section>
           {% endfor %}
         </div>
+      {% endif %}
+
+      {% if page.resources %}
+        <section id="resources">
+          <h2>Resources</h2>
+          <div class="resource-list">
+            {% for resource in page.resources %}
+              <article class="resource-item">
+                <h3><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a></h3>
+                {% if resource.description %}
+                  <p>{{ resource.description }}</p>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </div>
+        </section>
       {% endif %}
 
       {% if page.poster_image or page.poster_download_url %}
@@ -178,6 +186,9 @@ layout: default
           {% endif %}
           {% if page.timing or page.course_outline %}
             <li><a href="#outline">Course Outline and Schedule</a></li>
+          {% endif %}
+          {% if page.resources %}
+            <li><a href="#resources">Resources</a></li>
           {% endif %}
           {% if page.poster_image or page.poster_download_url %}
             <li><a href="#poster">Poster</a></li>
