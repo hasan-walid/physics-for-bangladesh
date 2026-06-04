@@ -138,16 +138,16 @@ layout: default
       {% if page.resources %}
         <section id="resources">
           <h2>Resources</h2>
-          <div class="resource-list">
+          <ul class="resource-list">
             {% for resource in page.resources %}
-              <article class="resource-item">
-                <h3><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a></h3>
+              <li class="resource-item">
+                <a href="{{ resource.url | relative_url }}">{{ resource.title }}</a>
                 {% if resource.description %}
-                  <p>{{ resource.description }}</p>
+                  <span>{{ resource.description }}</span>
                 {% endif %}
-              </article>
+              </li>
             {% endfor %}
-          </div>
+          </ul>
         </section>
       {% endif %}
 

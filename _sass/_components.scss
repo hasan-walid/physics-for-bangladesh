@@ -289,23 +289,20 @@
 
 .resource-list {
   display: grid;
-  gap: 0.85rem;
+  gap: 0.6rem;
+  margin: 0;
+  padding-left: 1.2rem;
 }
 
 .resource-item {
-  padding: 1rem 1.1rem;
-  border: 1px solid $border;
-  border-radius: $radius;
-  background: $panel;
+  padding-left: 0.15rem;
 }
 
-.resource-item h3 {
-  margin-bottom: 0.35rem;
-}
-
-.resource-item p {
-  margin-bottom: 0;
+.resource-item span {
+  display: block;
+  margin-top: 0.15rem;
   color: $muted;
+  font-size: 0.94rem;
 }
 
 .instructor-affiliation {
