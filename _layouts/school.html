@@ -31,6 +31,9 @@ layout: default
           {% if page.timing_summary %}
             <p><strong>Timing:</strong> {{ page.timing_summary }}</p>
           {% endif %}
+          {% if page.indico_link %}
+            <p><strong>ICTP Indico:</strong> <a href="{{ page.indico_link }}">Event page</a></p>
+          {% endif %}
         </div>
       {% endif %}
 
