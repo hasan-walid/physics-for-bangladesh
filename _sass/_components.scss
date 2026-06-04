@@ -288,21 +288,15 @@
 }
 
 .resource-list {
-  display: grid;
-  gap: 0.6rem;
   margin: 0;
-  padding-left: 1.2rem;
 }
 
 .resource-item {
-  padding-left: 0.15rem;
+  display: inline;
 }
 
 .resource-item span {
-  display: block;
-  margin-top: 0.15rem;
   color: $muted;
-  font-size: 0.94rem;
 }
 
 .instructor-affiliation {

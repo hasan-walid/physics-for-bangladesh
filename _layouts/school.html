@@ -138,16 +138,11 @@ layout: default
       {% if page.resources %}
         <section id="resources">
           <h2>Resources</h2>
-          <ul class="resource-list">
+          <p class="resource-list">
             {% for resource in page.resources %}
-              <li class="resource-item">
-                <a href="{{ resource.url | relative_url }}">{{ resource.title }}</a>
-                {% if resource.description %}
-                  <span>{{ resource.description }}</span>
-                {% endif %}
-              </li>
+              <span class="resource-item"><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a>{% if resource.description %} <span>({{ resource.description }})</span>{% endif %}</span>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
-          </ul>
+          </p>
         </section>
       {% endif %}
 

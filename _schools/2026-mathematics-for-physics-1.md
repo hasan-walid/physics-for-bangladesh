@@ -161,10 +161,8 @@ resources:
     description: "Updated through Lecture 6"
     url: "/assets/resources/math-physics-1/math-physics-1-lecture-notes.pdf"
   - title: "Tutorial 1 Notes"
-    description: "Real Numbers: Density, Completeness, and Equivalent Characterizations"
     url: "/assets/resources/math-physics-1/math-physics-1-tutorial-notes-01.pdf"
   - title: "Tutorial 2 Notes"
-    description: "Separable Hilbert Spaces, L^2 Space, Norm of Operator"
     url: "/assets/resources/math-physics-1/math-physics-1-tutorial-notes-02.pdf"
 permalink: /schools/math-physics-1/
 ---
