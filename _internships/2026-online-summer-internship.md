@@ -4,7 +4,7 @@ title: "ICTP PWF Bangladesh Internship 2026"
 slug: "2026-online-summer-internship"
 year: 2026
 category: "Internship"
-status: "Upcoming"
+status: "Opens 8 June"
 date_label_label: "Internship period"
 date_label: "20 July 2026 - 20 October 2026"
 application_period_label: "Application period"
@@ -30,6 +30,6 @@ You can read more about last year's internship here: [2025 internship archive](h
 
 Applications are open from 8 June 2026 to 30 June 2026. Recommendation letters must also be submitted by 30 June 2026.
 
-Before applying, review the mentor list and choose the projects that best match your background and interests. The application form asks for academic background, mentor preferences, and motivation for the selected topics.
+Before applying, review the mentor list and choose the projects that best match your background and interests. The application form asks for academic background, mentor preferences, and motivation for the selected topics. Applicants must rank at least three mentors.
 
 Applicants should prepare a CV and transcript. Recommendation letters must be submitted separately by the referee through the recommendation letter form; applications without a submitted recommendation letter may be considered incomplete.
