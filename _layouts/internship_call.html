@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{% assign mentor_tracks = page.tracks %}
+{% if page.mentor_data_key %}
+  {% assign mentor_tracks = site.data[page.mentor_data_key] %}
+{% endif %}
 <section class="school-hero" style="background-image: linear-gradient(180deg, rgba(244, 244, 240, 0.94), rgba(244, 244, 240, 0.90)), url('{{ page.hero_image | default: site.data.settings.hero_image | relative_url }}');">
   <div class="container school-hero-inner">
     <div class="school-hero-copy">
@@ -20,11 +24,17 @@ layout: default
         {% if page.application_period %}
           <p><strong>{{ page.application_period_label | default: "Application period" }}:</strong> {{ page.application_period }}</p>
         {% endif %}
+        {% if page.recommendation_letter_deadline %}
+          <p><strong>Recommendation letter deadline:</strong> {{ page.recommendation_letter_deadline }}</p>
+        {% endif %}
         {% if page.delivery_mode %}
           <p><strong>Format:</strong> {{ page.delivery_mode }}</p>
         {% endif %}
-        {% if page.status %}
-          <p><strong>Status:</strong> {{ page.status }}</p>
+        {% if page.application_link %}
+          <p><strong>Application form:</strong> <a href="{{ page.application_link }}">Open form</a></p>
+        {% endif %}
+        {% if page.recommendation_letter_link %}
+          <p><strong>Recommendation letter form:</strong> <a href="{{ page.recommendation_letter_link }}">Open form</a></p>
         {% endif %}
       </div>
 
@@ -33,28 +43,33 @@ layout: default
         {% if page.summary %}
           <p>{{ page.summary }}</p>
         {% endif %}
-        {% if page.application_requirements %}
-          <p><strong>Applications:</strong> {{ page.application_requirements }}</p>
-        {% endif %}
       </section>
 
       {{ content }}
 
-      {% if page.tracks %}
+      {% if mentor_tracks %}
         <section id="tracks">
           <h2>Tracks</h2>
-          {% for track in page.tracks %}
-            <section class="mentor-area">
+          <div class="track-index-grid">
+            {% for track in mentor_tracks %}
+              <a class="track-index-card" href="#track-{{ forloop.index }}">
+                <span class="track-index-title">{{ track.title }}</span>
+              </a>
+            {% endfor %}
+          </div>
+          {% for track in mentor_tracks %}
+            <section class="mentor-area" id="track-{{ forloop.index }}">
               <h3>{{ track.title }}</h3>
               {% if track.summary %}
                 <p>{{ track.summary }}</p>
               {% endif %}
               {% if track.mentors %}
                 <div class="mentor-stack">
-                  {% for mentor in track.mentors %}
-                    <article class="instructor-card">
-                      <div class="mentor-head">
-                        <div>
+                  {% assign sorted_mentors = track.mentors | sort: "name" %}
+                  {% for mentor in sorted_mentors %}
+                    <details class="mentor-panel">
+                      <summary class="mentor-panel-summary">
+                        <div class="mentor-summary-main">
                           <h4>{{ mentor.name }}</h4>
                           {% if mentor.affiliation %}
                             <p class="instructor-affiliation">{{ mentor.affiliation }}</p>
@@ -64,7 +79,7 @@ layout: default
                               <a href="{{ mentor.profile_url }}">
                                 {% if mentor.profile_url contains "inspirehep.net" %}
                                   INSPIRE
-                                {% elsif mentor.profile_url contains "scholar.google.com" %}
+                                {% elsif mentor.profile_url contains "scholar.google." %}
                                   Google Scholar
                                 {% elsif mentor.profile_url contains "orcid.org" %}
                                   ORCID
@@ -75,24 +90,42 @@ layout: default
                             </p>
                           {% endif %}
                         </div>
-                      </div>
-                      {% if mentor.prerequisites %}
-                        <p><strong>Prerequisites:</strong> {{ mentor.prerequisites }}</p>
-                      {% endif %}
-                      {% if mentor.projects %}
-                        {% for project in mentor.projects %}
-                          <div class="mentor-topic">
-                            <p><strong>Project {{ forloop.index }}:</strong> {{ project.title }}</p>
-                            {% if project.description %}
-                              <p>{{ project.description }}</p>
-                            {% endif %}
-                            {% if project.prerequisites %}
-                              <p><strong>Prerequisites:</strong> {{ project.prerequisites }}</p>
-                            {% endif %}
-                          </div>
-                        {% endfor %}
-                      {% endif %}
-                    </article>
+                        <div class="mentor-summary-side">
+                          {% if mentor.research_interests %}
+                            <p class="mentor-summary-topic">{{ mentor.research_interests }}</p>
+                          {% endif %}
+                          <span class="mentor-summary-toggle">View details</span>
+                        </div>
+                      </summary>
+                      <article class="instructor-card mentor-panel-body">
+                        <dl class="mentor-detail-list">
+                          {% if mentor.proposed_topic %}
+                            <div class="mentor-detail-row">
+                              <dt>Proposed topic</dt>
+                              <dd>{{ mentor.proposed_topic | markdownify }}</dd>
+                            </div>
+                          {% endif %}
+                          {% if mentor.topic_details %}
+                            <div class="mentor-detail-row">
+                              <dt>Project details</dt>
+                              <dd>{{ mentor.topic_details | markdownify }}</dd>
+                            </div>
+                          {% endif %}
+                          {% if mentor.additional_topics and mentor.additional_topics != "No" %}
+                            <div class="mentor-detail-row">
+                              <dt>Additional topics</dt>
+                              <dd>{{ mentor.additional_topics | markdownify }}</dd>
+                            </div>
+                          {% endif %}
+                          {% if mentor.expected_background %}
+                            <div class="mentor-detail-row">
+                              <dt>Expected background</dt>
+                              <dd>{{ mentor.expected_background | markdownify }}</dd>
+                            </div>
+                          {% endif %}
+                        </dl>
+                      </article>
+                    </details>
                   {% endfor %}
                 </div>
               {% endif %}
@@ -100,6 +133,15 @@ layout: default
           {% endfor %}
         </section>
       {% endif %}
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>For questions about the internship application or project list, please contact:</p>
+        <ul>
+          <li>Nabil Iqbal: <a href="mailto:nabil.iqbal@durham.ac.uk">nabil.iqbal@durham.ac.uk</a></li>
+          <li>Ahmed Rakin Kamal: <a href="mailto:ahmedrakinkamaltunok@gmail.com">ahmedrakinkamaltunok@gmail.com</a></li>
+        </ul>
+      </section>
     </div>
 
     <aside class="school-sidebar-outline">
@@ -107,9 +149,12 @@ layout: default
         <p class="eyebrow">On This Page</p>
         <ul class="outline-nav">
           <li><a href="#overview">Overview</a></li>
-          <li><a href="#call-for-mentors">Call for Mentors</a></li>
-          {% if page.tracks %}
+          <li><a href="#application-details">Application Details</a></li>
+          {% if mentor_tracks %}
             <li><a href="#tracks">Tracks</a></li>
+            {% for track in mentor_tracks %}
+              <li><a href="#track-{{ forloop.index }}">{{ track.title }}</a></li>
+            {% endfor %}
           {% endif %}
           <li><a href="#contact">Contact</a></li>
         </ul>

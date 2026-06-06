@@ -6,28 +6,30 @@ year: 2026
 category: "Internship"
 status: "Upcoming"
 date_label_label: "Internship period"
-date_label: "July - October 2026"
-application_period_label: "Mentor call deadline"
-application_period: "Before 7 June 2026"
+date_label: "20 July 2026 - 20 October 2026"
+application_period_label: "Application period"
+application_period: "8 June 2026 - 30 June 2026"
 delivery_mode: "Online supervision"
+application_link: "https://forms.gle/avu3gMrUStCAjsAJA"
+recommendation_letter_link: "https://forms.gle/m3XU8YKxsw3SEfg56"
 hero_image: /assets/images/hero-bg.jpg
 featured: true
-summary: "The 2026 online summer internship will continue the Physics For Bangladesh effort to connect students and young researchers in Bangladesh with active researchers through guided small research projects."
-eligibility: "We are currently inviting mentors, from advanced PhD students and postdoctoral researchers to faculty members, who would be interested in supervising motivated students over the summer."
-application_requirements: "Applications will be opened later."
+summary: "The ICTP PWF: Physics for Bangladesh Online Summer Internship connects Bangladeshi students with researchers through supervised projects in physics, mathematics, and related fields."
+eligibility: "Open to students currently enrolled in a bachelor's or master's program in Bangladesh, as well as recent graduates, provided they meet the prerequisites for their chosen topics."
+recommendation_letter_deadline: "30 June 2026"
+mentor_data_key: internship_2026_mentors
 permalink: /internships/2026-online-summer-internship/
 ---
-## Call for Mentors {#call-for-mentors}
+Students will work online with mentors on short research projects from 20 July 2026 to 20 October 2026. The projects are intended to introduce students to active research directions and help them build the background needed for further study.
 
-At ICTP PWF Physics for Bangladesh, one of our main goals is to build bridges between students and young researchers in Bangladesh and the international scientific community. We strongly believe that meaningful mentorship and scientific collaborations can help nurture the next generation of physicists from Bangladesh and create opportunities for impactful research.
-
-As part of this effort, we are continuing our mentorship and internship programme this July. We are currently looking for mentors, from advanced PhD students and postdoctoral researchers to faculty members, who would be interested in supervising motivated students on small research projects over the summer.
+The program is open only to Bangladeshi students. Applicants must be currently enrolled in a bachelor's or master's program in Bangladesh, or be recent graduates, and should meet the prerequisites for the topics they select.
 
 You can read more about last year's internship here: [2025 internship archive](https://physicsforbangladesh.org/internships/2025-online-summer-internship/).
 
-## Contact {#contact}
+## Application Details {#application-details}
 
-If you are an active researcher and would like to be part of this initiative, please contact the organizers before 7 June 2026:
+Applications are open from 8 June 2026 to 30 June 2026. Recommendation letters must also be submitted by 30 June 2026.
 
-- Nabil Iqbal: [nabil.iqbal@durham.ac.uk](mailto:nabil.iqbal@durham.ac.uk)
-- Ahmed Rakin Kamal: [ahmedrakinkamaltunok@gmail.com](mailto:ahmedrakinkamaltunok@gmail.com)
+Before applying, review the mentor list and choose the projects that best match your background and interests. The application form asks for academic background, mentor preferences, and motivation for the selected topics.
+
+Applicants should prepare a CV and transcript. Recommendation letters must be submitted separately by the referee through the recommendation letter form; applications without a submitted recommendation letter may be considered incomplete.

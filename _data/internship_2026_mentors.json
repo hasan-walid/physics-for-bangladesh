@@ -1,0 +1,332 @@
+[
+  {
+    "title": "High Energy Physics, Gravity, and Mathematical Physics",
+    "summary": "Projects in quantum field theory, string theory, gravity, cosmology, amplitudes, conformal field theory, algebraic combinatorics, and related mathematical physics.",
+    "mentors": [
+      {
+        "name": "Raza Sabbir Sufian",
+        "affiliation": "Professor, New Mexico State University / Brookhaven National Laboratory",
+        "research_interests": "Lattice QCD, nuclear and particle theory, quantum computing",
+        "profile_url": "https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=a%20R.S.Sufian.1&ui-citation-summary=true",
+        "proposed_topic": "Lattice QCD and quantum computing projects related to the Electron-Ion Collider physics",
+        "meeting_schedule": "Yes, I can commit to every two weeks. However, I am not sure if I can commit during this summer. From the Fall 2026 would be great.",
+        "expected_background": "Curiosity and motivation to carry out the research. Most importantly, the students should keep asking a lot of questions. Basic QFT knowledge and coding skills would be preferable for Lattice QCD calculations. Graduate-level quantum mechanics and some nuclear/particle phenomenology would be preferable for the quantum computing projects."
+      },
+      {
+        "name": "Hassaan Saleem",
+        "affiliation": "PhD Student, SUNY Albany",
+        "research_interests": "String Compactifications and Conformal Field Theory",
+        "profile_url": "https://inspirehep.net/authors/2907849?ui-citation-summary=true",
+        "proposed_topic": "Open-ended / several options",
+        "topic_details": "1) If the student has enough background, we can go through some string compactifications to cultivate the understanding for how the techniques work there.\n2) If the student wants to do a reading project, there are several options (some examples given below) based on their interests and background\n* Polchinski volume 1\n* Palti's review of the swampland program\n* A review for AdS/CFT (e.g. Maldacena's lectures, Kaplan's lectures, Benini's lectures or MAGOO review)\n* Learning supersymmetry (e.g. from Bertolini)\n* Learning CFT (e.g. from Ginsparg, Blumenhagen et al, or DiFrancesco et al)\n* Learning generalized symmetries (e.g. from Bhardwaj et al's lectures and Nameki's lectures)",
+        "meeting_schedule": "Yes",
+        "expected_background": "Basics of QFT and GR + Would be great if the student is good at Mathematica."
+      },
+      {
+        "name": "Shovon Biswas",
+        "affiliation": "Postdoctoral Researcher, Independent",
+        "research_interests": "Scattering amplitudes, ML theory and interpretability, AI for hep-th",
+        "profile_url": "https://scholar.google.com/citations?user=Par8orQAAAAJ&hl=en",
+        "proposed_topic": "Open-ended",
+        "meeting_schedule": "Yes",
+        "expected_background": "Very good linear algebra background (at the level of Apostol's book), Python programming knowledge"
+      },
+      {
+        "name": "Dibya Chakraborty",
+        "affiliation": "Postdoctoral Researcher, Indian Institute of Science Education and Research Thiruvananthapuram",
+        "research_interests": "Early Universe cosmology (Inflation), multi-field cosmology, string compactification, string inspired model building, dark energy",
+        "profile_url": "https://inspirehep.net/authors/1831283?ui-citation-summary=true",
+        "proposed_topic": "Reading projects:   For all the projects discussed below, the knowledge of GR, QFT and a little bit of differential/complex geometry is preferred. Depending on the progress, these projects may lead to concrete future works.   1. Learning about the inflationary cosmology and quantum perturbation in the Early Universe (Ref: first few chapters from https://cmb.wintherscoming.no/pdfs/baumann.pdf). Also involves simple coding in mathematica.  2. Learning about low-energy string theory and standard string inspired models like GKP-, LVS-, KKLT- models following https://arxiv.org/abs/2303.04819.  This project is mostly analytical.  3. Learning about string thermodynamics: https://arxiv.org/pdf/2408.13803. This project is mostly analytical.  4. Learning about kination and finding attractor solutions/trajectories in the late Universe: https://arxiv.org/pdf/2401.04064. This project is mostly analytical.  5. Quantum perturbations in the early Universe in presence of thermal fluctuations: https://arxiv.org/abs/1106.0701. This project is mostly analytical.  6. Production of primordial black holes in the early Universe: https://arxiv.org/abs/2301.03600",
+        "meeting_schedule": "once every two weeks, always available via emails.",
+        "expected_background": "Basic knowledge of GR, QFT, a little familiarity with differential/complex geometry (not necessary though), mathematica coding."
+      },
+      {
+        "name": "Anish Ghoshal",
+        "affiliation": "Postdoctoral Researcher, University of Sussex, UK",
+        "research_interests": "Cosmology, Particle Physics, Gravity, Field Theory, String-inspired QFT and quantum gravity",
+        "profile_url": "https://inspirehep.net/authors/1422123",
+        "proposed_topic": "Gravitational Waves, Inflation, Black Holes, Dark Matter",
+        "additional_topics": "Matter-antimatter asymmetry, Neutrino Physics, Neutrino Cosmology, CMB",
+        "meeting_schedule": "YES (online)",
+        "expected_background": "Basics of FLRW cosmology, basics of QFT, programming and simulations (if possible)"
+      },
+      {
+        "name": "Tanmoy Sengupta",
+        "affiliation": "Postdoctoral Researcher, Chennai Mathematical Institute",
+        "research_interests": "Conformal Field Theory & Integrable Systems My current interests also include AdS/CFT, quantum gravity, and quantum information.",
+        "profile_url": "https://inspirehep.net/authors/2180310?ui-citation-summary=true",
+        "proposed_topic": "1. Introduction to Conformal Field Theory and Conformal Bootstrap 2. Introduction to Classical and Quantum Integrable Systems",
+        "topic_details": "1. Learn the basics of conformal field theories in two dimensions, then based on progress explore a small problem in the conformal bootstrap using simple numerical methods (e.g., Python). This introduces a modern, symmetry-based approach to solving quantum/conformal field theories.\n\n2. Study classical and quantum integrable systems, where many conserved quantities allow exact solutions. Learn techniques like the Bethe ansatz, with applications in spin chains and statistical mechanics.",
+        "meeting_schedule": "Yes",
+        "expected_background": "I don't expect any prior background in these specific topics. However, basic knowledge of statistical mechanics, quantum field theory, and numerical methods will be helpful along the way."
+      },
+      {
+        "name": "Sachin Grover",
+        "affiliation": "Postdoctoral Researcher, Indian Institute of Technology Kanpur, India",
+        "research_interests": "Conformal Field Theory, String theory",
+        "profile_url": "https://inspirehep.net/authors/2139519?ui-citation-summary=true",
+        "proposed_topic": "boundaries in conformal field theories",
+        "additional_topics": "topological defects, basics of string theory",
+        "meeting_schedule": "Yes",
+        "expected_background": "Basics of CFT, basics of supersymmetry would be good but not mandatory. The project topic is flexible."
+      },
+      {
+        "name": "Debangshu Mukherjee",
+        "affiliation": "Postdoctoral Researcher, Pohang University of Science and Technology (POSTECH)",
+        "research_interests": "Theoretical High-Energy Physics (primarily focused on Matrix Models and their application in gravity and string theory, RG flows in holography etc.)",
+        "profile_url": "https://inspirehep.net/authors/1477963?ui-citation-summary=true",
+        "proposed_topic": "Target space entanglement in Matrix Models",
+        "meeting_schedule": "Yes.",
+        "expected_background": "Quantum Mechanics and some basic aspects of QFT will be helpful. Some elementary proficiency in Mathematica will also be beneficial in the later stages of the proposed project."
+      },
+      {
+        "name": "Samiur R. Mir",
+        "affiliation": "PhD Student, Oklahoma State University",
+        "research_interests": "Neutrino Phenomenology, Beyond the Standard Model, Astroparticle Physics",
+        "profile_url": "https://inspirehep.net/authors/1905709?ui-citation-summary=true",
+        "proposed_topic": "Complementary Observations in Neutrino Telescopes",
+        "topic_details": "Topics are flexible and not limited to the listed topics. The primary goal is to study relevant papers, develop the key concepts and motivation for the studies, and most importantly, reproduce notable results and test new scenarios.",
+        "additional_topics": "Probing Non-Standard Interactions with Atmospheric Neutrinos, Mitigating Neutrino Flux Uncertainties at DUNE Using the PRISM Technique, Precision Measurement of θ13 via Reactor Antineutrino Disappearance",
+        "meeting_schedule": "Yes",
+        "expected_background": "Required: QM II level knowledge, beginner level computational experience (python or mathematica) \nPreferred but not mandatory: particle physics knowledge (up to electroweak interaction) at Griffiths/Halzen-Martin level"
+      },
+      {
+        "name": "Gurmeet Singh Punia",
+        "affiliation": "Postdoctoral Researcher, ICTS/PCFT USTC (University of Science and Technology China)",
+        "research_interests": "Black hole in string theory, Supergravity, AdS/CFT correspondence, Entanglement entropy",
+        "profile_url": "https://inspirehep.net/authors/1987432",
+        "proposed_topic": "Supersymmetric Indices and Black Rings in 5D Gravity",
+        "topic_details": "Project 1: Supersymmetric Indices and Black Rings in 5D Gravity\nProject Idea: Study 5D gravitational path integrals using saddle-point methods to compute supersymmetric indices. Analyze black ring geometry, focusing on angular momentum and horizon area. Investigate the 4D-5D connection, exploring how small black rings correspond to lower-dimensional black holes, linking higher-dimensional gravity to 4D black hole physics.\n\nProject 2: One-Loop Partition Function and Heat Kernel Technique\nProject Idea: Study the computation of one-loop partition functions in curved spacetime using the heat kernel method. Implement simple calculations for scalar or gravitational fields on Anti-de Sitter (AdS) backgrounds and analyze how quantum corrections emerge from functional determinants in quantum field theory and gravity.",
+        "additional_topics": "One-Loop Partition Function and Heat Kernel Technique",
+        "meeting_schedule": "Yes, I believe having a biweekly meeting would be an excellent idea.",
+        "expected_background": "Expected students should have a basic foundation in general relativity and quantum field theory, with familiarity in differential geometry and basic computational skills."
+      },
+      {
+        "name": "Nafiz Ishtiaque",
+        "affiliation": "Professor, Fudan University & SIMIS",
+        "research_interests": "Mathematical physics",
+        "profile_url": "https://scholar.google.com/citations?hl=en&user=Y3U6_UsAAAAJ&view_op=list_works&sortby=pubdate",
+        "proposed_topic": "Simulating cluster theories on lattices",
+        "topic_details": "The goal of this almost purely computational project is to learn about Monte Carlo simulations of cluster expansions of some simple lattice models and to try to detect phase transitions. Hopefully this will teach us something about error thresholds of toric-code-type quantum systems in one lower dimension.",
+        "meeting_schedule": "yes",
+        "expected_background": "quantum mechanics, stat mech, but most importantly programming."
+      },
+      {
+        "name": "Arpit Das",
+        "affiliation": "Postdoctoral Researcher, University of Edinburgh",
+        "research_interests": "Generalised Symmetries, CFTs, Holography & Hydrodynamics, Entanglement Entropy",
+        "profile_url": "https://inspirehep.net/authors/1806329?ui-citation-summary=true",
+        "proposed_topic": "Classification of rational CFTs using number theoretic techniques",
+        "topic_details": "In this project, we will study the Mathur-Mukhi-Sen (MMS) classification programme of rational conformal field theories (RCFTs) which is based on the modular linear differential equations (MLDEs) that their characters satisfy. This classification scheme revolves around two parameters of the MLDE: (n,l) -- its order (n) and the zeros of its Wronskian, called the Wronskian index (l). To begin, we will set up the MLDE and study its space of character-like solutions and constraints on it. Then we will use a coset-construction procedure along with tools from Lie algebra embeddings to identify which character-like solutions correspond to genuine RCFTs. After this, we will review recent works on the classification of (3,0) RCFTs. As a by-product of this classification, we would be able to predict the presence and absence of meromorphic theories at central charges greater than 24. We shall also discuss new results in constraining the space of two-character RCFTs for arbitrary values of the Wronskian index. We shall conclude by reviewing recent progress on the study of MLDEs for Fricke and Hecke groups.",
+        "meeting_schedule": "Yes",
+        "expected_background": "They should have some familiarity with QFT (or advanced QM), linear algebra, ordinary differential equations and writing programs involving basic looping constructs in python/c/c++."
+      },
+      {
+        "name": "Siddiqur Rahman Milon",
+        "affiliation": "Postdoctoral Researcher, Oklahoma State University",
+        "research_interests": "mathematical general relativity, conformal geometry, geometric partial differential equations and conformal gravity",
+        "proposed_topic": "Initial Value of Formulation of GR, Initial Value Formulation of Conformal Gravity, Solutions to Einstein's Constraint Equations, Solutions to Bach Constraint Equations, Linearization Stability of General Relativity, Linearization Stability of Bach Equations, A survey of Calabi-Yau's Conjecture/Theorem, An introduction to Gromov Written Invariants, An Into to Non-linear (dynamical) stability in GR, Written's Positive Mass theorem",
+        "meeting_schedule": "Sure.",
+        "expected_background": "Familiarity with basic Riemannian geometry, Partial differential equations, strong foundations in linear algebra, basic algebraic topology, and first year graduate level course in general relativity"
+      },
+      {
+        "name": "Subhroneel Chakrabarti",
+        "affiliation": "Postdoctoral Researcher, Masaryk University",
+        "research_interests": "String theory, quantum field theory",
+        "profile_url": "https://inspirehep.net/authors/1614375?ui-citation-summary=true&ui-exclude-self-citations=true",
+        "proposed_topic": "Worldsheet formalism, string field theory",
+        "topic_details": "The goal will be to read and understand a specific topic in worldsheet formalism and/or string field theory in details.",
+        "meeting_schedule": "I will have considerably less time during July and August due to family reasons. Meeting once every two weeks should be possible but I wanted to be open.",
+        "expected_background": "A very solid foundation in quantum field theory, non abelian gauge theory, path integral and BRST quantisation. Any exposure to string theory and CFT is bonus but not required. The exact topic and the level can be adjusted according to the student's background. The topic is broad enough that it can support everything from an entry level reading topic to advanced research level problem."
+      },
+      {
+        "name": "Ahmed Ittihad Hasib",
+        "affiliation": "PhD Student, University of Warwick",
+        "research_interests": "Algebraic Combinatorics",
+        "proposed_topic": "Hall Algebras and generalisations of Schur functions, Tropical Geometry and Kontsevich's formula for counting rational curves",
+        "meeting_schedule": "Yes",
+        "expected_background": "The first project is theoretical with expected backgrounds in Young Diagram combinatorics and representations of finite groups. The second project involves preliminary algebraic geometry background but predominantly involves programming an interface that can deal with tropical curves."
+      }
+    ]
+  },
+  {
+    "title": "Astronomy, Astrophysics, and Cosmology",
+    "summary": "Projects in extragalactic astronomy, plasma astrophysics, star formation, black holes, gravitational waves, and computational astrophysics.",
+    "mentors": [
+      {
+        "name": "Syeda Lammim Ahad",
+        "affiliation": "Postdoctoral Researcher, Waterloo Centre for Astrophysics",
+        "research_interests": "Extragalactic astronomy, Galaxy clusters, galaxy evolution",
+        "profile_url": "https://scholar.google.com/citations?user=glCxJTAAAAAJ&hl",
+        "proposed_topic": "Galaxy evolution in galaxy clusters",
+        "meeting_schedule": "yes",
+        "expected_background": "Undergraduate physics and mathematics (calculus, statistics, probability), Python programming; prior knowledge in astronomy/astrophysics is a bonus"
+      },
+      {
+        "name": "Shah Mohammad Bahauddin",
+        "affiliation": "Professor, University of Colorado Boulder / NMSU",
+        "research_interests": "Astronomy",
+        "profile_url": "https://scholar.google.com/citations?user=9EsKHu8AAAAJ&hl=en",
+        "proposed_topic": "Disentangling Turbulence in Astrophysical Plasma",
+        "topic_details": "Quantifying the non-thermal energy dissipation that drives the heating of solar and stellar atmosphere remains a critical, unresolved challenge in astrophysics due to the difficulty of separating multi-scale turbulent cascades from bulk plasma flows. This research internship focuses on establishing objective observational criteria to identify and isolate local turbulence in the solar chromosphere. The intern will investigate the spectral line profiles and spectropolarimetric signatures required to distinguish true turbulent structures from wave modes and large-scale atmospheric dynamics. By identifying these diagnostic requirements, the work will try to constrain magnetohydrodynamic (MHD) wave-damping models and inform the instrumentation requirements for future solar observing missions.",
+        "additional_topics": "No",
+        "meeting_schedule": "Yes",
+        "expected_background": "Background in Fluid Dynamics, Math methods, and Doppler Shift Observations."
+      },
+      {
+        "name": "Tabassum Shahriar Tanvir",
+        "affiliation": "Postdoctoral Researcher, Iowa State University",
+        "research_interests": "Astrophysics. My research interests are in theoretical and computational astrophysics namely in star and Galaxy formation.",
+        "profile_url": "https://scholar.google.com/citations?user=7GU1tD8AAAAJ&hl=en",
+        "proposed_topic": "The initial mass function of the early universe star formation",
+        "meeting_schedule": "One every two weeks",
+        "expected_background": "A background in physics or engineering is preferable"
+      },
+      {
+        "name": "Shammi Tahura",
+        "affiliation": "Postdoctoral Researcher, University of North Carolina at Chapel Hill",
+        "research_interests": "Gravitational wave astrophysics, gravitational waveform development in general relativity and alternative theories of gravity",
+        "profile_url": "https://inspirehep.net/authors/1746230",
+        "proposed_topic": "Basics of black hole perturbation theory",
+        "topic_details": "The intern will learn about Newman-Penrose framework, perturbation around a background spacetime, Teukolsky equations to solve for black hole perturbations for a binary source, and if time and resource permits, black hole perturbation toolkit.",
+        "additional_topics": "Depending on the intern's aptitude, we can also choose other topics such as GW memory effects or testing alternative theories of gravity with GWs.",
+        "meeting_schedule": "Weekly meetings in July, once every two weeks meetings in august-october",
+        "expected_background": "Prior knowledge in vector analysis and special theory of relativity is required. Experience in general theory of relativity and tensor analysis will be very helpful."
+      },
+      {
+        "name": "Ishika Palit",
+        "affiliation": "Postdoctoral Researcher, Institute of Astronomy, NTHU, Hsinchu, Taiwan",
+        "research_interests": "High Energy Physics - Computational Astrophysics",
+        "profile_url": "https://scholar.google.com/citations?hl=en&user=ST8AckIAAAAJ&view_op=list_works&sortby=pubdate",
+        "proposed_topic": "Relativistic accretion flows and jet formation in black holes.",
+        "topic_details": "This internship will introduce students to the physics of black hole accretion and jet launching in the framework of general relativistic magnetohydrodynamics (GRMHD). The focus will be on understanding how magnetized plasma behaves in the curved spacetime around rotating black holes and how different initial and boundary conditions influence accretion flow structure and mass accretion rates.",
+        "meeting_schedule": "Yes",
+        "expected_background": "Students should ideally have a background in undergraduate physics or applied mathematics, with some exposure to classical mechanics and electromagnetism. Prior knowledge of fluid dynamics, special relativity, or general relativity would be helpful but is not required.\nMost importantly, students should have strong motivation to engage with theoretical and computational astrophysics, and willingness to read scientific material and work through challenging concepts step by step."
+      }
+    ]
+  },
+  {
+    "title": "Quantum Information, Condensed Matter, and Statistical Physics",
+    "summary": "Projects in quantum information, condensed matter, many-body systems, transport, and statistical mechanics.",
+    "mentors": [
+      {
+        "name": "Talal Ahmed Chowdhury",
+        "affiliation": "Professor, University of Kansas",
+        "research_interests": "Quantum Computing, Theoretical High Energy Physics",
+        "profile_url": "https://inspirehep.net/authors/1206156",
+        "proposed_topic": "Quantum Error Correction",
+        "topic_details": "XZZX surface code/Quantum Subsystem Code/Dynamical Code/Quantum Polar Code",
+        "additional_topics": "Quantum Simulation",
+        "meeting_schedule": "Once in two weeks. Sunday 9.30pm - 11pm BDT",
+        "expected_background": "Basic understanding of quantum mechanics and quantum computing. Better if the intern knows Qiskit and Stim."
+      },
+      {
+        "name": "Muhammad Asaduzzaman",
+        "affiliation": "Postdoctoral Researcher, North Carolina State University",
+        "research_interests": "Quantum Computation, lattice field theory",
+        "profile_url": "https://scholar.google.com/citations?hl=en&user=ExYb0a4AAAAJ&view_op=list_works&sortby=pubdate",
+        "proposed_topic": "Quantum simulation of field theory, error correction",
+        "topic_details": "Quantum simulation of open quantum system",
+        "additional_topics": "Quantum simulation of gauge theories",
+        "meeting_schedule": "yes",
+        "expected_background": "Taken linear algebra and matrix theory, taken quantum 1 and quantum 2. Efficient in coding with Python/C++/Julia."
+      },
+      {
+        "name": "Shahnoor Rahman",
+        "affiliation": "PhD Student, University of Miami",
+        "research_interests": "Condensed Matter Physics",
+        "profile_url": "https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=ANZ5fUOELhvJmVlyX&user=ymySJEIAAAAJ",
+        "proposed_topic": "Computation of Electronic and Topological Properties of Materials",
+        "topic_details": "Using Quantum Espresso, EPW, BoltzTraP2, Phoebe and other Python libraries to compute/analyze electronic and topological properties.\n\nWe might start from basic 1D models for electronic and phononic bands, single-band and two-band models for transport and topological properties (Berry Phase, Chern Number).\n\nWe'll learn how to build a reproducible workflow for computation and analysis.",
+        "additional_topics": "If the intern is interested, I'm willing to make educational videos on certain topics directly\nrelated to the original project. And if the intern needs help with the requirements of my project, I'm\nwilling to provide it, but I need commitment.",
+        "meeting_schedule": "yes",
+        "expected_background": "Classical Mechanics (Lagrangian and Hamiltonian to find equations of motion, normal\ncoordinates and eigenvalues) and Quantum Mechanics (Schrodinger equation, eigenstates\nand diagonalization), Fourier transformation between coordinate space and momentum\nspace), basic understanding of command line interface (CLI) and process of compiling a\nC/C++/Fortran program."
+      },
+      {
+        "name": "Jacopo Niedda",
+        "affiliation": "Postdoctoral Researcher, ICTP",
+        "research_interests": "Statistical Mechanics, Quantum Many-Body Systems, Disordered Systems",
+        "profile_url": "https://scholar.google.fi/citations?user=ZbSyhZ4AAAAJ&hl=it",
+        "proposed_topic": "Two-dimensional disordered Heisenberg model",
+        "topic_details": "Optimization of the classical energy and study of the low-energy excitations.",
+        "meeting_schedule": "Yes",
+        "expected_background": "Good knowledge of numerical optimization techniques, like Monte Carlo and gradient descent algorithms. Graduate-level knowledge of statistical mechanics. Some notions regarding models with continuous symmetries (at least the physical content of Mermin-Wagner and Goldstone theorems)."
+      },
+      {
+        "name": "Matteo Marsili",
+        "affiliation": "Professor, Abdus Salam ICTP",
+        "research_interests": "Statistical mechanics, complex systems",
+        "profile_url": "https://scholar.google.com/citations?user=utY1nToAAAAJ&hl=en&oi=ao",
+        "proposed_topic": "Closed-loop learning in exponential families",
+        "topic_details": "Extending https://journals.aps.org/prl/abstract/10.1103/156q-3ngc",
+        "meeting_schedule": "once every two weeks, in the fall (September to December)",
+        "expected_background": "Background in statistical physics, basics of probability and stochastic processes"
+      },
+      {
+        "name": "Adam McRoberts",
+        "affiliation": "Postdoctoral Researcher, ICTP",
+        "research_interests": "Condensed Matter Theory -- Anomalous transport and hydrodynamics; dynamics of driven, disordered, and/or kinetically-constrained systems; path integrals over entangled states",
+        "profile_url": "https://scholar.google.co.uk/citations?user=qQ8F890AAAAJ&hl=en",
+        "proposed_topic": "(A -- numerical) Anomalous transport -- simulation of e.g., classical spin chains or kinetically-constrained models; (B -- numerical) Quantum phase transitions in spin chains; (C -- theoretical) Entangled-state path integral analysis of quantum spin chains",
+        "topic_details": "A -- Numerical simulation of transport properties of various classical models, exact details to be defined later. Could be equilibrium hydrodynamics or driven systems, could be spin chains or kinetically-constrained particle hopping, depending on interest.\n\nB -- Numerical simulation of the zero-temperature properties of quantum spin chains using matrix product states. Calculation of observables such as magnetic/dimer order, spin correlations, entanglement entropy, etc. Exact models to be defined by interest.\n\nC -- Constructing path integrals over matrix product states to analyse the properties of quantum spin chains; analysis of quantum phase transitions at the saddle point level and calculation of fluctuations of entanglement order, etc. above this.",
+        "meeting_schedule": "Yes",
+        "expected_background": "The three proposed topics are ordered by degree of ambition, increasing (A) -> (C). For (A), no particular background would be especially required, other than a decent exposure to programming, though knowledge of statistical mechanics/thermodynamics and Hamiltonian dynamics would be helpful. For (B), same as (A), but a good knowledge of quantum mechanics would be essential. For (C) a very strong background in quantum mechanics -- many-body theory/field theory would be required, or a particularly strong candidate who would be able to pick those up through (guided) independent study."
+      }
+    ]
+  },
+  {
+    "title": "Applied and Computational Physics",
+    "summary": "Projects in accelerator physics, machine learning in physics, biomedical engineering, thermal engineering, and computational modelling.",
+    "mentors": [
+      {
+        "name": "Maryam Mostajeran",
+        "affiliation": "Professor, Yazd University",
+        "research_interests": "Accelerator physics",
+        "profile_url": "https://scholar.google.com/citations?user=ob1q7DgAAAAJ&hl=it",
+        "proposed_topic": "Numerical simulations in accelerator physics",
+        "meeting_schedule": "yes",
+        "expected_background": "I expect students to have a basic background in physics and familiarity with electromagnetism. Some programming experience would be helpful, but it is not required at the beginning of the project. If necessary, students may learn the required programming tools during the internship. Most importantly, I value motivation, curiosity, and willingness to learn."
+      },
+      {
+        "name": "Md Nakib Hayat Chowdhury",
+        "affiliation": "Professor, Bangladesh Army University of Science and Technology (BAUST), Saidpur",
+        "research_interests": "ML and Physics",
+        "profile_url": "https://scholar.google.com/citations?user=1GPckP4AAAAJ&hl=en",
+        "proposed_topic": "Applied ML in Physics",
+        "meeting_schedule": "Yes",
+        "expected_background": "Minimum programming knowledge"
+      },
+      {
+        "name": "Mohammad Arif Sobhan Bhuiyan",
+        "affiliation": "Professor, Xiamen University Malaysia",
+        "research_interests": "IC Design, RF Communication",
+        "profile_url": "https://scholar.google.com/citations?hl=en&user=b5dwfiAAAAAJ&view_op=list_works",
+        "proposed_topic": "A power amplifier module design for 6G communication transceiver",
+        "additional_topics": "An active low pass filter design for 6G communication transceiver",
+        "meeting_schedule": "yes",
+        "expected_background": "Basic knowledge of VLSI related course and be familiar with Cadence or similar EDA tools"
+      },
+      {
+        "name": "Dr. Md. Johirul Islam",
+        "affiliation": "Professor, RUET, BD",
+        "research_interests": "Biomedical engineering, Myoelectric pattern recognition, Biomedical instrumentation, Embedded systems",
+        "profile_url": "https://scholar.google.com/citations?user=YKo9U04AAAAJ&hl=en",
+        "proposed_topic": "Myoelectric pattern recognition",
+        "topic_details": "To deal with the challenges of myoelectric pattern recognition",
+        "additional_topics": "Embedded systems",
+        "meeting_schedule": "Yes",
+        "expected_background": "Python or Matlab programming"
+      },
+      {
+        "name": "Mohammad Monjurul Ehsan",
+        "affiliation": "Professor, Islamic University of Technology",
+        "research_interests": "Thermo-fluid Mechanics: Computational Fluid Dynamics (CFD), Heat Transfer with Nanofluid in heat exchangers, Compressible Fluid Flow, Shock Wave Propagation. Applied Thermal Engineering: Heat Exchanger Design and Optimization, Dry Cooling Tower Technologies, Waste management, Supercritical/Transcritical CO2 Power Cycles, Novel Power Cycle Modelling (Steam, ORC, and Kalina), Refrigeration Cycles (Vapor compression, absorption, adsorption, cascade systems, and gas refrigeration). Renewable Energy Technologies: Solar Energy Technologies, Solar Collector Design, Energy System Modelling, Hybrid Approach for Power Generation, Concentrated Solar Power Technologies, and Geothermal energy.",
+        "profile_url": "https://scholar.google.com.au/citations?user=ZvtYId0AAAAJ&hl=en&oi=ao",
+        "proposed_topic": "Applied Thermal Engineering: Heat Exchanger Design and Optimization, Dry Cooling Tower Technologies, Waste management, Supercritical/Transcritical CO2 Power Cycles, Novel Power Cycle Modelling (Steam, ORC, and Kalina), Refrigeration Cycles (Vapor compression, absorption, adsorption, cascade systems, and gas refrigeration).",
+        "additional_topics": "Applied Thermal Engineering: Heat Exchanger Design and Optimization, Dry Cooling Tower Technologies, Waste management, Supercritical/Transcritical CO2 Power Cycles, Novel Power Cycle Modelling (Steam, ORC, and Kalina), Refrigeration Cycles (Vapor compression, absorption, adsorption, cascade systems, and gas refrigeration).",
+        "meeting_schedule": "YES",
+        "expected_background": "Final year Undergraduate students in the field of Mechanical Engineering"
+      }
+    ]
+  }
+]
