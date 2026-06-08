@@ -4,14 +4,14 @@ title: "ICTP PWF Bangladesh Internship 2026"
 slug: "2026-online-summer-internship"
 year: 2026
 category: "Internship"
-status: "Opens 8 June"
+status: "Application Open"
 date_label_label: "Internship period"
 date_label: "20 July 2026 - 20 October 2026"
 application_period_label: "Application period"
 application_period: "8 June 2026 - 30 June 2026"
 delivery_mode: "Online supervision"
-application_link: "https://forms.gle/avu3gMrUStCAjsAJA"
-recommendation_letter_link: "https://forms.gle/m3XU8YKxsw3SEfg56"
+application_link: "https://forms.gle/BPVhkG355B5XQjj19"
+recommendation_letter_link: "https://forms.gle/78EF5WDT4R9jeJCc9"
 hero_image: /assets/images/hero-bg.jpg
 featured: true
 summary: "The ICTP PWF: Physics for Bangladesh Online Summer Internship connects Bangladeshi students with researchers through supervised projects in physics, mathematics, and related fields."
