@@ -99,6 +99,12 @@ layout: default
                       </summary>
                       <article class="instructor-card mentor-panel-body">
                         <dl class="mentor-detail-list">
+                          {% if mentor.note %}
+                            <div class="mentor-detail-row">
+                              <dt>Note</dt>
+                              <dd>{{ mentor.note | markdownify }}</dd>
+                            </div>
+                          {% endif %}
                           {% if mentor.proposed_topic %}
                             <div class="mentor-detail-row">
                               <dt>Proposed topic</dt>
