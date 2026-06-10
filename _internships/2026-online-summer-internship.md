@@ -10,6 +10,7 @@ date_label: "20 July 2026 - 20 October 2026"
 application_period_label: "Application period"
 application_period: "8 June 2026 - 30 June 2026"
 delivery_mode: "Online supervision"
+indico_link: "https://indico.ictp.it/event/11374/"
 application_link: "https://forms.gle/BPVhkG355B5XQjj19"
 recommendation_letter_link: "https://forms.gle/78EF5WDT4R9jeJCc9"
 hero_image: /assets/images/hero-bg.jpg

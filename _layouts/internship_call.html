@@ -30,6 +30,9 @@ layout: default
         {% if page.delivery_mode %}
           <p><strong>Format:</strong> {{ page.delivery_mode }}</p>
         {% endif %}
+        {% if page.indico_link %}
+          <p><strong>ICTP Indico:</strong> <a href="{{ page.indico_link }}">Event page</a></p>
+        {% endif %}
         {% if page.application_link %}
           <p><strong>Application form:</strong> <a href="{{ page.application_link }}">Apply</a></p>
         {% endif %}
