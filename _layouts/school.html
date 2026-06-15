@@ -138,30 +138,40 @@ layout: default
       {% if page.resources %}
         <section id="resources">
           <h2>Resources</h2>
-          <p class="resource-list">
+          <div class="resource-list">
             {% for resource in page.resources %}
-              <span class="resource-item"><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a>{% if resource.description %} <span>({{ resource.description }})</span>{% endif %}</span>{% unless forloop.last %}, {% endunless %}
+              <div class="resource-item">
+                <div>
+                  <strong>{{ resource.title }}</strong>
+                  {% if resource.description %}
+                    <span>{{ resource.description }}</span>
+                  {% endif %}
+                </div>
+                <a href="{{ resource.url | relative_url }}">View / download</a>
+              </div>
             {% endfor %}
-          </p>
+          </div>
         </section>
       {% endif %}
 
       {% if page.poster_image or page.poster_download_url %}
-        <h2 id="poster">Poster</h2>
-        <div class="poster-card">
-          {% if page.poster_image %}
-            <div class="poster-preview-wrap">
-              <a class="poster-preview" href="{{ page.poster_image | relative_url }}">
-                <img src="{{ page.poster_image | relative_url }}" alt="Course poster for {{ page.title }}">
-              </a>
-            </div>
-          {% endif %}
-          {% if page.poster_download_url %}
-            <div class="poster-actions">
-              <a class="button button-secondary" href="{{ page.poster_download_url }}">Download Poster</a>
-            </div>
-          {% endif %}
-        </div>
+        <section id="poster">
+          <h2>Poster</h2>
+          <div class="poster-card">
+            {% if page.poster_image %}
+              <div class="poster-preview-wrap">
+                <a class="poster-preview" href="{{ page.poster_image | relative_url }}">
+                  <img src="{{ page.poster_image | relative_url }}" alt="Course poster for {{ page.title }}">
+                </a>
+              </div>
+            {% endif %}
+            {% if page.poster_download_url %}
+              <div class="poster-actions">
+                <a class="button button-secondary" href="{{ page.poster_download_url }}">Download Poster</a>
+              </div>
+            {% endif %}
+          </div>
+        </section>
       {% endif %}
 
     </div>
