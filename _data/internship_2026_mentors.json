@@ -24,6 +24,17 @@
         "expected_background": "Basics of QFT and GR + Would be great if the student is good at Mathematica."
       },
       {
+        "name": "Laura Pintucci",
+        "affiliation": "Postdoctoral Researcher, ICTP",
+        "research_interests": "Experimental particle physics with the ATLAS experiment at CERN. ATLAS experiment data analysis, ML in data analysis, quantum information observables in collider experiments, top quark physics.",
+        "profile_url": "https://inspirehep.net/authors/2654729",
+        "proposed_topic": "Top-quark pair reconstruction using machine learning",
+        "topic_details": "Top quarks and anti-top quarks are produced in pairs at the LHC, and this topology is used in many fundamental Standard Model (SM) measurements as well as in searches for physics beyond the SM. However, top quarks decay before hadronization and before reaching the detector (e.g. ATLAS detector).\n\nTherefore, analyses involving top-quark-related observables need to reconstruct the top quarks from their decay products. Several methods currently exist for reconstructing top-quark pairs, but there is still significant room for improvement, particularly through the use of machine-learning algorithms. The dileptonic decay channel of top-quark pairs, in which both the top quark and the anti-top quark decay leptonically, has not yet been fully explored with ML techniques, especially in the regime of highly energetic top quarks.",
+        "additional_topics": "Quantum observables for LHC experiments.\n\nQuantum observables (such as entanglement, magic, discord, etc.) have recently gathered the attention of high energy collider experiments, such as LHC experiments. Ongoing discussion is taking place on interpretation and feasibility of quantum observables measurement at LHC experiments. Looking into top quark pair spin correlations, one can study which quantum observables can be measured, sensitivity to these observables in experiments like ATLAS, optimization of basis and phase-space used for such measurements, and sensitivity to new physics beyond the SM.",
+        "meeting_schedule": "Yes, I am able to meet intern every one/two weeks",
+        "expected_background": "Project on top quark reconstruction with ML: Programming knowledge required (Python or C++ knowledge is needed). Some ML learning knowledge and some particle physics knowledge would be useful but not strictly needed.\n\nProject on Quantum Observables for Collider Physics: Programming knowledge required (Python or C++ knowledge is needed). Some basic quantum mechanics knowledge and some particle physics knowledge would be useful but not strictly needed."
+      },
+      {
         "name": "Shovon Biswas",
         "affiliation": "Postdoctoral Researcher, Independent",
         "research_interests": "Scattering amplitudes, ML theory and interpretability, AI for hep-th",
