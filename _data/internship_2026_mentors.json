@@ -35,6 +35,24 @@
         "expected_background": "Project on top quark reconstruction with ML: Programming knowledge required (Python or C++ knowledge is needed). Some ML learning knowledge and some particle physics knowledge would be useful but not strictly needed.\n\nProject on Quantum Observables for Collider Physics: Programming knowledge required (Python or C++ knowledge is needed). Some basic quantum mechanics knowledge and some particle physics knowledge would be useful but not strictly needed."
       },
       {
+        "name": "Somnath Porey",
+        "affiliation": "Postdoctoral Researcher, Chennai Mathematical Institute",
+        "research_interests": "2d CFT, holography, quantum chaos, and quantum information theory",
+        "profile_url": "https://inspirehep.net/authors/2830379?ui-citation-summary=true&ui-exclude-self-citations=true",
+        "proposed_topic": "Aspects of quantum information in 2d CFT",
+        "meeting_schedule": "yes",
+        "expected_background": "Basics of quantum field theory"
+      },
+      {
+        "name": "Baishali Roy",
+        "affiliation": "Postdoctoral Researcher, Indian Institute of Technology Kanpur",
+        "research_interests": "Conformal field theory, quantum chaos and complexity, AdS/CFT, non-equilibrium setups in CFTs",
+        "profile_url": "https://inspirehep.net/authors/1912629?ui-citation-summary=true&ui-exclude-self-citations=true",
+        "proposed_topic": "Entanglement, Black holes and Chaos",
+        "meeting_schedule": "Yes",
+        "expected_background": "Knowledge of quantum mechanics, quantum field theory basics, and general relativity basics"
+      },
+      {
         "name": "Shovon Biswas",
         "affiliation": "Postdoctoral Researcher, Independent",
         "research_interests": "Scattering amplitudes, ML theory and interpretability, AI for hep-th",
